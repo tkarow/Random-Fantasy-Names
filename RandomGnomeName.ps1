@@ -47,14 +47,15 @@ function Get-GnomeName {
     $Name = "$($Name.Substring(0,1).ToUpper())"+"$($Name.Substring(1))"
 
     $Name = $Name.replace('aa','a')
-    $Name = $Name.replace('ee','e')
+    $Name = $Name.replace('ee','-e')
     $Name = $Name.replace('ei','e-i')
     $Name = $Name.replace('ii','i')
     $Name = $Name.replace('oo','o')
     $Name = $Name.replace('uu','u')
     $Name = $Name.replace('yy','y')
     $Name = $Name.replace('kk','k')
-    $Name = $Name.replace('lll','ll')
+    $Name = $Name.replace('lll','-ll')
+    $Name = $Name.replace('fff','-ff')
 
     if(($Name -notlike "*a") -and ($Name -notlike "*e") -and ($Name -notlike "*i") -and ($Name -notlike "*o") -and ($Name -notlike "*u") -and ($Name -notlike "*y") -and ((Get-Random -Minimum 1 -Maximum 3) -eq 1)){$Name = "$($Name)s"}
     if(($Name -notlike "*a") -and ($Name -notlike "*e") -and ($Name -notlike "*i") -and ($Name -notlike "*o") -and ($Name -notlike "*u") -and ($Name -notlike "*y") -and ($Name -notlike "*s") -and ($Suffix -eq $false) -and ((Get-Random -Minimum 1 -Maximum 4) -eq 1)){$Name = "$($Name)y"}
