@@ -1,10 +1,10 @@
 $Prefixes = @("Lill","Min","Sm")
-$OneSyllableRoots = ("bib","bin","blink","bob","did","dink","dun","fib","gig","glib","ingle","ink","ken","kirk","link","lop","mini","nib","nip","nub","rap","riff","ren","ti","tink","tinkle","trib","tum","wig")
-$MultipleSyllableRoots = @("chibi","diddy","dunlop","giggle","itchker","tummytum","wiggle")
+$OneSyllableRoots = ("bib","bin","blink","bob","did","dink","dun","fib","gig","glib","ingle","ink","ken","kin","kirk","link","nib","nip","nub","rap","riff","ren","sugar","ti","tink","tinkle","trib","tum","wig","wink")
+$MultipleSyllableRoots = @("chibi","diddy","dunlop","giggle","itchker","tom","tummytum","wiggle")
 $Roots = @()
 $Roots += $OneSyllableRoots
 $Roots += $MultipleSyllableRoots
-$Suffixes = @("abble","ibble","ing","inker","it","ito","kin","let","lin","ling","lingur","o","ocky","shick")
+$Suffixes = @("abble","bob","ibble","ing","inker","it","itcher","ken","kin","let","lin","ling","lingur","o","ocky","shick")
 $Vowels = @("a","e","i","o","u")
 
 function Get-GnomeName {
@@ -17,12 +17,12 @@ function Get-GnomeName {
     
     if((Get-Random -Minimum 1 -Maximum 3) -eq 2){$Root = $Roots[(Get-Random -Minimum 0 -Maximum ($Roots.Count))]}elseif((Get-Random -Minimum 1 -Maximum 3) -eq 2){$Root = "$($OneSyllableRoots[(Get-Random -Minimum 0 -Maximum ($OneSyllableRoots.Count))])$($OneSyllableRoots[(Get-Random -Minimum 0 -Maximum ($OneSyllableRoots.Count))])"}else{$Root = $Roots[(Get-Random -Minimum 0 -Maximum ($Roots.Count))]}
 
-    if($OneSyllableRoots -contains $Root){$Suffix = $true}
+    if(($OneSyllableRoots -contains $Root) -or ($MultipleSyllableRoots -contains $Root)){$Suffix = $true}
 
-    if(($Prefix -eq $true) -or ((Get-Random -Minimum 1 -Maximum 6) -eq 1)){$Prefix = $true;$NamePrefix = $Prefixes[(Get-Random -Minimum 0 -Maximum ($Prefixes.Count))]}else{$NamePrefix=''}
+    if(($Prefix -eq $true) -or ((Get-Random -Minimum 1 -Maximum 11) -eq 1)){$Prefix = $true;$NamePrefix = $Prefixes[(Get-Random -Minimum 0 -Maximum ($Prefixes.Count))]}else{$NamePrefix=''}
     if(($Suffix -eq $true) -or ((Get-Random -Minimum 1 -Maximum 6) -gt 1)){$Suffix = $true;$NameSuffix = $Suffixes[(Get-Random -Minimum 0 -Maximum ($Suffixes.Count))]}else{$NameSuffix =''}
 
-    if(($NameSuffix -like "ing") -and (($Root -notlike "*a") -or ($Root -notlike "*e") -or ($Root -notlike "*i") -or ($Root -notlike "*o") -or ($Root -notlike "*u") -or ($Root -notlike "*y"))){$Root = "$($Root)$($Root[-1])"}
+    if(($NameSuffix -like "ing") -and (($Root -notlike "*a") -and ($Root -notlike "*e") -and ($Root -notlike "*i") -and ($Root -notlike "*o") -and ($Root -notlike "*u") -and ($Root -notlike "*y"))){$Root = "$($Root)$($Root[-1])"}
     if((($NameSuffix -like "abble") -or ($NameSuffix -like "ibble")) -and (($Root -like "*a") -or ($Root -like "*e") -or ($Root -like "*i") -or ($Root -like "*o") -or ($Root -like "*u") -or ($Root -like "*y"))){$NameSuffix = "bble"}
     if((($NameSuffix -like "it")) -and (($Root -like "*a") -or ($Root -like "*e") -or ($Root -like "*i") -or ($Root -like "*o") -or ($Root -like "*u") -or ($Root -like "*y"))){$NameSuffix = "t"}
     if(($NameSuffix -like "ocky") -and (($Root -like "*a") -or ($Root -like "*e") -or ($Root -like "*i") -or ($Root -like "*o") -or ($Root -like "*u"))){$NameSuffix = "ck"}
@@ -47,6 +47,7 @@ function Get-GnomeName {
     $Name = "$($Name.Substring(0,1).ToUpper())"+"$($Name.Substring(1))"
 
     $Name = $Name.replace('aa','a')
+    $Name = $Name.replace('ai','i')
     $Name = $Name.replace('ee','-e')
     $Name = $Name.replace('ei','e-i')
     $Name = $Name.replace('ii','i')
@@ -56,6 +57,7 @@ function Get-GnomeName {
     $Name = $Name.replace('kk','k')
     $Name = $Name.replace('lll','-ll')
     $Name = $Name.replace('fff','-ff')
+    $Name = $Name.replace('rr','r')
 
     if(($Name -notlike "*a") -and ($Name -notlike "*e") -and ($Name -notlike "*i") -and ($Name -notlike "*o") -and ($Name -notlike "*u") -and ($Name -notlike "*y") -and ((Get-Random -Minimum 1 -Maximum 3) -eq 1)){$Name = "$($Name)s"}
     if(($Name -notlike "*a") -and ($Name -notlike "*e") -and ($Name -notlike "*i") -and ($Name -notlike "*o") -and ($Name -notlike "*u") -and ($Name -notlike "*y") -and ($Name -notlike "*s") -and ($Suffix -eq $false) -and ((Get-Random -Minimum 1 -Maximum 4) -eq 1)){$Name = "$($Name)y"}
