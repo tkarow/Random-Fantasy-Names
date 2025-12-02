@@ -1,10 +1,10 @@
 $Prefixes = @("did","rich","silly")
-$OneSyllableRoots = ("bib","big","blink","bob","did","dink","fib","gig","glib","ingle","ink","ken","ker","kin","kirk","link","nab","nib","nip","nub","pib","riff","tink","tum","wig","wink")
-$MultipleSyllableRoots = @("bibble","bumble","chibi","diddy","dingle","dumble","giggle","itchker","nibble","ninny","nimble","pebble","riffle","sugar","tickle","tingle","tinkle","tom","trib","tummytum","wiggle","winkle")
+$OneSyllableRoots = ("bib","big","blink","bob","did","dink","fib","gig","glib","hop","ingle","ink","ken","ker","kin","kirk","link","nab","nib","nip","nub","pib","riff","tink","tum","wig","wink")
+$MultipleSyllableRoots = @("bibble","bumble","chibi","diddy","dingle","dumble","giggle","itchker","nibble","ninny","nimble","pebble","piddle","riffle","sniff","sugar","tickle","tingle","tinkle","tom","trib","tummytum","wiggle","winkle")
 $Roots = @()
 $Roots += $OneSyllableRoots
 $Roots += $MultipleSyllableRoots
-$Suffixes = @("abble","abbit","bee","bob","bin","chub","ibble","iggle","in","ing","-inker","it","-itcher","ken","kin","let","lin","link","ling","lingur","ocky","nub","nubbin","rump","shick","tom","wiff","wiggle")
+$Suffixes = @("abble","abbit","bee","bob","bin","chatter","chitter","chub","ibble","iggle","in","ing","-inker","it","-itcher","ken","kin","let","lin","link","ling","lingur","ocky","piddle","pudding","nub","nubbin","rump","shick","tom","wiff","wiggle")
 $Vowels = @("a","i")
 
 function Get-GnomeName {
@@ -81,6 +81,7 @@ function Get-GnomeName {
     $Name = $Name.replace('kn','k-n')
     $Name = $Name.replace('kp','k-p')
     $Name = $Name.replace('kg','k-g')
+    $Name = $Name.replace('gk','gg')
     $Name = $Name.replace('kw','k-w')
     $Name = $Name.replace('lll','-ll')
     $Name = $Name.replace('mn','m-n')
