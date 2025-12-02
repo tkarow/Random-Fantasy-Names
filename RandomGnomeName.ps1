@@ -1,5 +1,5 @@
 $Prefixes = @("big","blink","rich","silly")
-$OneSyllableRoots = ("bib","bigs","bob","bum","chit","cub","cup","did","dink","fib","flub","gig","glib","gum","hop","ingle","ink","jig","ken","ker","kin","kirk","link","lump","nab","nib","nip","nub","peck","pib","plump","plunk","pop","riff","tink","tum","wig","wink")
+$OneSyllableRoots = ("bib","bob","bum","chit","cub","cup","did","dink","fib","flub","gig","glib","gum","hop","ingle","ink","jig","ken","ker","kin","kirk","link","lump","nab","nib","nip","nub","peck","pib","plump","plunk","pop","riff","tink","tum","wig","wink")
 $MultipleSyllableRoots = @("bibble","bumble","chibi","chin","diddy","dimple","dingle","dumble","giggle","gummy","hiccup","itchker","nipper","nibble","ninny","nimble","patter","pebble","piddle","pitter","riffle","scoot","skip","sniff","sugar","thimble","tickle","tingle","tinkle","toddle","tom","trib","tummy","tummytum","wiggle","winkle")
 $Roots = @()
 $Roots += $OneSyllableRoots
@@ -15,6 +15,8 @@ function Get-GnomeName {
         [bool]$Suffix
     )
     
+    $Name = ''
+
     if((Get-Random -Minimum 1 -Maximum 3) -eq 2){$Root = $Roots[(Get-Random -Minimum 0 -Maximum ($Roots.Count))]}elseif((Get-Random -Minimum 1 -Maximum 3) -eq 2){$Root = "$($OneSyllableRoots[(Get-Random -Minimum 0 -Maximum ($OneSyllableRoots.Count))])$($OneSyllableRoots[(Get-Random -Minimum 0 -Maximum ($OneSyllableRoots.Count))])"}else{$Root = $Roots[(Get-Random -Minimum 0 -Maximum ($Roots.Count))]}
 
     if(($OneSyllableRoots -contains $Root) -or ($MultipleSyllableRoots -contains $Root)){$Suffix = $true}
@@ -80,6 +82,7 @@ function Get-GnomeName {
     $Name = $Name.replace('uu','u')
     $Name = $Name.replace('yy','y')
     $Name = $Name.replace('kk','k')
+    $Name = $Name.replace('pp','p')
     $Name = $Name.replace('kn','kn')
     $Name = $Name.replace('kp','k-p')
     $Name = $Name.replace('kg','k-g')
@@ -179,14 +182,29 @@ function Get-GnomeName {
 
 #####
 
-$Nouns = @("finger","quill","stamp","toe","wit")
-$Agents = @("catcher","cooker","itcher","stamper","wrencher")
-$Adjectives = @("chilly","inky","itchy","quick","witty")
+$Nouns = @("arrow","axe","cap","clog","drip","eye","finger","glimmer","glove","grub","hammer","ink","light","lore","needle","nubbin","pinky","quill","quiver","rock","rule","root","shoe","shovel","shroom","screw","soup","stamp","story","sugar","thread","thumb","toe","tongue","tooth","wit","well","wrench")
+$Agents = @("breaker","catcher","cooker","cutter","curler","inker","itcher","picker","puller","maker","mender","signer","snatcher","speaker","stamper","taster","teller","tinker","twitcher")
+$Adjectives = @("bright","broken","chilly","cold","dark","dim","fumble","gold","high","inky","itchy","low","pink","quick","silver","sweet","tiny","twitchy","twinkle","warm","witty")
 
 function Get-GnomeSurname {
+    
+    $Surname = ''
 
-#Verb + agent or agent + verb
-#Or
-#Adjective + noun
+    $Roll = ''
+    $Roll = Get-Random -Minimum 1 -Maximum 3
+
+    if($Roll -eq 1){$Surname = "$($Adjectives[(Get-Random -Minimum 0 -Maximum ($Adjectives.Count))])$($Agents[(Get-Random -Minimum 0 -Maximum ($Agents.Count))])"}else{
+    
+        
+
+    }if($Roll -eq 2){
+    
+        $Surname = "$($Nouns[(Get-Random -Minimum 0 -Maximum ($Nouns.Count))])$($Agents[(Get-Random -Minimum 0 -Maximum ($Agents.Count))])"
+
+    }
+
+    $Surname = "$($Surname.Substring(0,1).ToUpper())"+"$($Surname.Substring(1))"
+
+    $Surname
 
 }
