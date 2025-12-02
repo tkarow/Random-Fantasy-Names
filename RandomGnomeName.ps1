@@ -12,12 +12,14 @@ function Get-GnomeName {
         [parameter(Mandatory=$False)]
         [bool]$Prefix,
         [parameter(Mandatory=$False)]
-        [bool]$Suffix
+        [bool]$Suffix,
+        [parameter(Mandatory=$False)]
+        [string]$AdHoc
     )
     
     $Name = ''
 
-    if((Get-Random -Minimum 1 -Maximum 3) -eq 2){$Root = $Roots[(Get-Random -Minimum 0 -Maximum ($Roots.Count))]}elseif((Get-Random -Minimum 1 -Maximum 3) -eq 2){$Root = "$($OneSyllableRoots[(Get-Random -Minimum 0 -Maximum ($OneSyllableRoots.Count))])$($OneSyllableRoots[(Get-Random -Minimum 0 -Maximum ($OneSyllableRoots.Count))])"}else{$Root = $Roots[(Get-Random -Minimum 0 -Maximum ($Roots.Count))]}
+    if(!$AdHoc){if((Get-Random -Minimum 1 -Maximum 3) -eq 2){$Root = $Roots[(Get-Random -Minimum 0 -Maximum ($Roots.Count))]}elseif((Get-Random -Minimum 1 -Maximum 3) -eq 2){$Root = "$($OneSyllableRoots[(Get-Random -Minimum 0 -Maximum ($OneSyllableRoots.Count))])$($OneSyllableRoots[(Get-Random -Minimum 0 -Maximum ($OneSyllableRoots.Count))])"}else{$Root = $Roots[(Get-Random -Minimum 0 -Maximum ($Roots.Count))]}}else{$Root = $AdHoc}
 
     if(($OneSyllableRoots -contains $Root) -or ($MultipleSyllableRoots -contains $Root)){$Suffix = $true}
 
@@ -187,8 +189,8 @@ $RockNouns = @("arrow","axe","beard","book","bottle","button","cap","cavern","cl
 $RockAgents = @("bender","breaker","brow","caster","catcher","cooker","counter","crafter","cutter","digger","drinker","dripper","dropper","finder","fixer","grinder","hider","-inker","-itcher","judger","keeper","locker","picker","printer","puller","pusher","presser","maker","mender","quencher","reader","rooter","sealer","seeker","signer","sinker","snatcher","speaker","spinner","stamper","taster","teacher","teller","tender","thrower","tinker","tricker","twitcher","watcher","witcher","worker","writer")
 $RockAdjectives = @("bad","bright","broken","chilly","clean","cold","dark","deep","dim","dizzy","double","dusty","fumble","funny","gold","good","hard","high","inky","itchy","long","lost","loud","low","magic","noble","over","pink","quick","short","silver","soft","soot","steady","sweet","tender","tiny","twitchy","under","twinkle","warm","wet","witty")
 
-$ForestNouns = @("axe","autumn","bark","beard","bee","berry","bottle","bush","button","cap","cloud","color","craft","drip","eye","flower","finger","fizzle","fungus","garden","glade","glove","grass","grub","hearth","home","honey","jam","leaf","light","lore","moon","mud","mushroom","name","needle","nubbin","path","petal","pinky","pipe","prank","root","shoe","shroom","shrub","sky","spice","song","soup","spell","splinter","spring","song","stem","stone","story","sugar","summer","sun","star","stream","stump","syrup","thimble","thistle","thorn","thread","trunk","thumb","toe","tongue","tooth","tree","water","wit","weed","well","whistle","winter","wood")
-$ForestAgents = @("breaker","caster","catcher","cooker","crafter","cutter","dreamer","drinker","dropper","finder","fixer","friend","grinder","grower","hider","-itcher","keeper","picker","puller","pusher","presser","maker","mender","quencher","ranger","rooter","seeker","signer","smoker","snatcher","speaker","spinner","stamper","stinger","taster","teacher","teller","tender","thrower","tinker","tricker","twitcher","watcher","weeder","witcher","worker")
+$ForestNouns = @("axe","autumn","bark","beard","bee","berry","bottle","bush","button","cap","cloud","color","craft","drip","eye","flower","finger","fizzle","fungus","garden","glade","glove","grass","grub","hearth","home","honey","jam","leaf","light","lore","moon","moss","mud","mushroom","name","needle","nubbin","path","petal","pinky","pipe","prank","root","shoe","shroom","shrub","sky","spice","song","soup","spell","splinter","spring","song","stem","stone","story","sugar","summer","sun","star","stream","stump","syrup","thimble","thistle","thorn","thread","timber","trunk","thumb","toe","tongue","tooth","tree","water","wit","weed","well","whistle","winter","wood")
+$ForestAgents = @("breaker","caster","catcher","cooker","crafter","cutter","dreamer","drinker","dropper","finder","fixer","friend","grinder","grower","hider","-itcher","keeper","picker","puller","pusher","presser","maker","mender","quencher","ranger","rooter","seeker","signer","smoker","snatcher","speaker","splitter","spinner","stamper","stinger","taster","teacher","teller","tender","thrower","tinker","tricker","twitcher","watcher","weeder","witcher","worker")
 $ForestAdjectives = @("bad","bright","broken","chilly","clean","cold","cozy","dark","dizzy","double","fumble","funny","good","green","hard","high","itchy","long","lost","loud","low","magic","over","pink","quick","short","silver","soft","steady","sweet","tender","tiny","twitchy","twinkle","warm","wet","witty")
 
 function Get-GnomeSurname {
