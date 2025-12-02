@@ -4,7 +4,7 @@ $MultipleSyllableRoots = @("bibble","bumble","chibi","chin","diddy","dimple","di
 $Roots = @()
 $Roots += $OneSyllableRoots
 $Roots += $MultipleSyllableRoots
-$Suffixes = @("abble","abbit","bee"."bit","bob","bin","chatter","chitter","chub","dumpling","ibble","iggle","in","ing","inker","it","itcher","ken","kin",,"knickers","let","lin","link","ling","lingur","nipper","ocky","piddle","pudding","nub","nubbin","rump","shick","sip","tom","wiff","wiggle")
+$Suffixes = @("abble","abbit","bee"."bit","bob","bin","bun","chatter","chitter","chub","dumpling","ibble","iggle","in","ing","inker","it","itcher","ken","kin",,"knickers","let","lin","link","ling","lingur","nipper","ocky","piddle","pudding","nub","nubbin","rump","shick","sip","tom","wiff","wiggle")
 $Vowels = @("a","i")
 
 function Get-GnomeName {
@@ -182,9 +182,9 @@ function Get-GnomeName {
 
 #####
 
-$Nouns = @("arrow","axe","beard","book","cap","clog","coal","drip","eye","finger","glimmer","glove","grub","hammer","ink","light","link","lore","needle","nubbin","pinky","quill","quiver","rock","rule","root","shoe","shovel","shroom","screw","soup","spell","stamp","story","sugar","thread","thumb","toe","tongue","tooth","wit","well","wrench")
-$Agents = @("breaker","caster","catcher","cooker","cutter","curler","finder","-inker","itcher","picker","puller","pusher","maker","mender","reader","signer","snatcher","speaker","stamper","taster","teller","tinker","twitcher","watcher","witcher","writer")
-$Adjectives = @("bright","broken","chilly","cold","dark","dim","dusty","fumble","gold","high","inky","itchy","lost","low","magic","pink","quick","silver","sweet","tiny","twitchy","twinkle","warm","wet","witty")
+$Nouns = @("arrow","axe","beard","book","bottle","cap","cavern","clog","coal","craft","drip","eye","finger","fire","fizzle","fungus","gem","glimmer","glove","grub","hammer","ink","key","law","light","link","lock","lore","needle","nubbin","paper","pinky","print","quill","quiver","rock","ruin","rule","root","shoe","shovel","shroom","screw","soup","spell","splinter","spring","song","stamp","steam","stone","story","study","sugar","thorn","thread","thumb","toe","tongue","tooth","tunnel","water","wax","wit","well","whistle","worm","wrench")
+$Agents = @("breaker","caster","catcher","cooker","crafter","cutter","digger","drinker","dripper","dropper","finder","fixer","hider","inker","itcher","judger","keeper","locker","picker","puller","pusher","maker","mender","quencher","reader","rooter","sealer","seeker","signer","singer","sinker","snatcher","sniffer","speaker","spinner","stamper","taster","teacher","teller","tender","thrower","tinker","tricker","twitcher","watcher","witcher","worker","writer")
+$Adjectives = @("bad","bright","broken","chilly","clean","cold","dark","deep","dim","dizzy","double","dusty","fumble","funny","gold","good","hard","high","inky","itchy","long","lost","loud","low","magic","noble","over","pink","quick","short","silver","soft","sooty","steady","sweet","tender","tiny","twitchy","under","twinkle","warm","wet","witty")
 
 function Get-GnomeSurname {
     
