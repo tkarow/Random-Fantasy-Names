@@ -1,10 +1,10 @@
 $Prefixes = @("big","blink","rich","silly")
-$OneSyllableRoots = ("bib","bigs","bob","chit","did","dink","fib","flub","gig","glib","hop","ingle","ink","ken","ker","kin","kirk","link","lump","nab","nib","nip","nub","peck","pib","riff","tink","tum","wig","wink")
+$OneSyllableRoots = ("bib","bigs","bob","bum","chit","did","dink","fib","flub","gig","glib","hop","ingle","ink","ken","ker","kin","kirk","link","lump","nab","nib","nip","nub","peck","pib","riff","tink","tum","wig","wink")
 $MultipleSyllableRoots = @("bibble","bumble","chibi","chin","diddy","dingle","dumble","giggle","gummy","itchker","nipper","nibble","ninny","nimble","patter","pebble","piddle","pitter","riffle","scoot","skip","sniff","sugar","tickle","tingle","tinkle","toddle","tom","trib","tummytum","wiggle","winkle")
 $Roots = @()
 $Roots += $OneSyllableRoots
 $Roots += $MultipleSyllableRoots
-$Suffixes = @("abble","abbit","bee","bob","bin","chatter","chitter","chub","dumpling","ibble","iggle","in","ing","-inker","it","-itcher","ken","kin",,"knickers","let","lin","link","ling","lingur","nipper","ocky","piddle","pudding","nub","nubbin","rump","shick","sip","tom","wiff","wiggle")
+$Suffixes = @("abble","abbit","bee"."bit","bob","bin","chatter","chitter","chub","dumpling","ibble","iggle","in","ing","inker","it","itcher","ken","kin",,"knickers","let","lin","link","ling","lingur","nipper","ocky","piddle","pudding","nub","nubbin","rump","shick","sip","tom","wiff","wiggle")
 $Vowels = @("a","i")
 
 function Get-GnomeName {
@@ -42,7 +42,7 @@ function Get-GnomeName {
     }
 
     #if(($Prefix -eq $true) -and (($Root -notlike "a*") -or ($Root -like "e*") -or ($Root -notlike "i*") -or ($Root -notlike "o*") -or ($Root -notlike "u*") -or ($Root -notlike "y*"))){$NamePrefix = "$($NamePrefix)$($Vowels[(Get-Random -Minimum 0 -Maximum ($Vowels.Count))])-"}
-    if(($Prefix -eq $true) -and (($Root -notlike "a*") -or ($Root -like "e*") -or ($Root -notlike "i*") -or ($Root -notlike "o*") -or ($Root -notlike "u*") -or ($Root -notlike "y*"))){$NamePrefix = "$($NamePrefix)-"}
+    if(($Prefix -eq $true) -and (($Root -notlike "a*") -or ($Root -like "e*") -or ($Root -notlike "i*") -or ($Root -notlike "o*") -or ($Root -notlike "u*") -or ($Root -notlike "y*"))){$NamePrefix = "$($NamePrefix)"}
 
     $Name = "$($NamePrefix)$($Root)$($NameSuffix)".ToLower()
 
@@ -51,8 +51,9 @@ function Get-GnomeName {
     $Name = $Name.replace('ee','-e')
     if($NameSuffix -like "bee"){$Name = "$($Name.substring(0,($Name.Length -2)))bee"}
     
-    if(($Name -like "*nubbins*") -or ($Name -like "*nibble*") -or ($Name -like "*abbit")){
+    if(($Name -like "*nubbins*") -or ($Name -like "*nibble*") -or ($Name -like "*abbit") -or ($Name -like "*pebble*")){
     
+        $Name = $Name.replace('pebble','!!!')
         $Name = $Name.replace('nubbin','xxx')
         $Name = $Name.replace('nibble','zzz')
         $Name = $Name.replace('abbit','qqq')
@@ -61,6 +62,7 @@ function Get-GnomeName {
         $Name = $Name.replace('xxx','nubbin')
         $Name = $Name.replace('zzz','nibble')
         $Name = $Name.replace('qqq','abbit')
+        $Name = $Name.replace('!!!','pebble')
 
     }else{
     
@@ -165,6 +167,9 @@ function Get-GnomeName {
         $Name = $Name.replace('nn','n-n')
     
     }
+
+    if(($Name -like "*a-ings") -or ($Name -like "*e-ings") -or ($Name -like "*i-ings") -or ($Name -like "*o-ings") -or ($Name -like "*u-ings")){$Name = "$($Name.Substring(0,($Name.Length - 6)))ings"}
+    if(($Name -like "*a-ing") -or ($Name -like "*e-ing") -or ($Name -like "*i-ing") -or ($Name -like "*o-ing") -or ($Name -like "*u-ing")){$Name = "$($Name.Substring(0,($Name.Length - 5)))ing"}
 
     $Name = "$($Name.Substring(0,1).ToUpper())"+"$($Name.Substring(1))"
 
