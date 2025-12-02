@@ -1,10 +1,10 @@
-$Prefixes = @("did","silly")
-$OneSyllableRoots = ("bib","big","blink","bob","did","dink","fib","gig","glib","ingle","ink","ken","ker","kin","kirk","link","nab","nib","nip","nub","pib","rap","riff","tink","tum","wig","wink")
-$MultipleSyllableRoots = @("bibble","bumble","chibi","diddy","dingle","dumble","giggle","itchker","nibble","ninny","nimble","riffle","sugar","tingle","tinkle","tom","trib","tummytum","wiggle","winkle")
+$Prefixes = @("did","rich","silly")
+$OneSyllableRoots = ("bib","big","blink","bob","did","dink","fib","gig","glib","ingle","ink","ken","ker","kin","kirk","link","nab","nib","nip","nub","pib","riff","tink","tum","wig","wink")
+$MultipleSyllableRoots = @("bibble","bumble","chibi","diddy","dingle","dumble","giggle","itchker","nibble","ninny","nimble","riffle","sugar","tickle","tingle","tinkle","tom","trib","tummytum","wiggle","winkle")
 $Roots = @()
 $Roots += $OneSyllableRoots
 $Roots += $MultipleSyllableRoots
-$Suffixes = @("abble","abbit","bee","bob","bin","chub","ibble","iggle","in","ing","-inker","it","-itcher","ken","kin","let","lin","link","ling","lingur","ocky","nub","nubbin","shick","tom","wiggle")
+$Suffixes = @("abble","abbit","bee","bob","bin","chub","ibble","iggle","in","ing","-inker","it","-itcher","ken","kin","let","lin","link","ling","lingur","ocky","nub","nubbin","rump","shick","tom","wiff","wiggle")
 $Vowels = @("a","i")
 
 function Get-GnomeName {
@@ -51,11 +51,14 @@ function Get-GnomeName {
     $Name = $Name.replace('ee','-e')
     if($NameSuffix -like "bee"){$Name = "$($Name.substring(0,($Name.Length -2)))bee"}
     
-    if($Name -like "*nubbins*"){
+    if(($Name -like "*nubbins*") -or ($Name -like "*nibble*")){
     
         $Name = $Name.replace('nubbin','xxx')
-        $Name = $Name.replace('bb','b')
+        $Name = $Name.replace('nibble','zzz')
+        #$Name = $Name.replace('bbb','b')
+        $Name = $Name.replace('bbb','bb')
         $Name = $Name.replace('xxx','nubbin')
+        $Name = $Name.replace('zzz','nibble')
 
     }else{
     
@@ -65,6 +68,7 @@ function Get-GnomeName {
 
     $Name = $Name.replace('bt','b-t')
     $Name = $Name.replace('bitch','b-itch')
+    $Name = $Name.replace('ea','e-a')
     $Name = $Name.replace('ei','e-i')
     $Name = $Name.replace('ii','i')
     $Name = $Name.replace('oo','o')
@@ -119,6 +123,7 @@ function Get-GnomeName {
     }
 
     if($Name -like "*nubin*"){$Name = $Name.replace('nubin','nubbin')}
+    if($Name -like "*nubin*"){$Name = $Name.replace('nible','nibble')}
 
     if($Name -like "*bigit*"){$Name = $Name.replace('bigit','bibbit')}
     if($Name -like "*niggle*"){$Name = $Name.replace('niggle','bibble')}
