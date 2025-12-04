@@ -148,6 +148,7 @@ function Get-GnomeName {
     if($Name -like "*niggle*"){$Name = $Name.replace('niggle','bibble')}
     if($Name -like "*bible*"){$Name = $Name.replace('bible','bibble')}
 
+    if($Name -like "*aby"){$Name = "$($Name.Substring(0,($Name.Length - 3)))abby"}
     if($Name -like "*apin"){$Name = "$($Name.Substring(0,($Name.Length - 4)))appin"}
     if($Name -like "*yble"){$Name = "$($Name.Substring(0,($Name.Length - 4)))efoot"}
     if($Name -like "*umy"){$Name = "$($Name.Substring(0,($Name.Length - 3)))ummy"}
