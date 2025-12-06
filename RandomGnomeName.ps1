@@ -3883,5 +3883,6 @@ function Get-GnomeSurname {
 
 }
 
+#Remove duplicate IPA pronunciations and populate values for those that have 0
 #Need a way of removing duplicate words before choosing options for surnames
 #Add "cks" --> "x", "s" --> "z" switch?
