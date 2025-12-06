@@ -276,13 +276,13 @@ function Get-GnomeSurname {
                 $Options = $RockAdjectives | ?{$_[0] -eq $StartingLetter}
 
                 $1 =''
-                $1 = $Options["$(Get-Random -Minimum 0 -Maximum ($Options.Count))"]
+                $1 = if($Options.Count -gt 1){$Options[(Get-Random -Minimum 0 -Maximum ($Options.Count))]}else{$Options}
 
                 $Options = ''
                 $Options = $RockAgents | ?{$_[0] -eq $StartingLetter}
 
                 $2 = ''
-                $2 = $Options[(Get-Random -Minimum 0 -Maximum ($Options.Count))]
+                $2 = if($Options.Count -gt 1){$Options[(Get-Random -Minimum 0 -Maximum ($Options.Count))]}else{$Options}
 
             }
 
