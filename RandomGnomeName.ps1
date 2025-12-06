@@ -1,6 +1,14 @@
 #This is a set of curated syllables, sounds, and words that reflect my idea of fantasy gnome name constructors. I've written logic to combine them into aesthetically pleasing names after iterating on the results. This is a work in progress, and subject to taste.
 #Shoutout to tophonetics.com for the (American) IPA phonetic transcriptions
 
+#################
+#################
+##             ##
+## First Names ##
+##             ##
+#################
+#################
+
 $Prefixes = @("blink","rich")
 $OneSyllableRoots = ("bib","big","bink","bit","bob","bum","chit","chum","cub","cup","did","dink","fib","flub","fun","gig","glib","gum","hop","ingle","ink","jig","ken","ker","kin","kirk","link","lump","nab","nib","nip","nub","peck","pib","pink","plump","plunk","pop","puff","riff","skip","sniff","tiff","tink","tub","tum","wig","wink")
 $MultipleSyllableRoots = @("apple","bibble","bobbin","bumble","buddy","chibi","chin","diddy","dimple","dingle","dumble","fudgy","giggle","gummy","hiccup","itchker","jelly","mingle","nipper","nibble","ninny","nimble","noggin","patter","pebble","pepper","piddle","pitter","putter","riffle","rumple","scoot","silly","snicker","snuffle","sugar","thimble","tiddly","thumper","tickle","tingle","tinkle","toddle","tom","trib","truffle","tumble","tummy","tummytum","wiggle","willy","winkle","wrinkle")
@@ -196,9 +204,9 @@ function Get-GnomeName {
 
 #####
 
-$RockNouns = @("aim","angle","bang","bauble","beard","bell","belly","belt","benċ","book","boot","bottle","brass","buckle","buddy","bug","button","candle","candy","cane","cap","cavern","ċime","ċip","ċortle","clock","clog","coal","cog","copper","craft","crate","crumb","cubby","crystal","cycle","design","dial","dingle","doodad","drill","drip","engine","fault","figure","finger","fire","fizzle","flange","flip","flux","fumble","fungus","fuse","gadget","garnet","gas","gavel","gear","gem","gimmick","gizmo","glimmer","glove","grub","hammer","hatċ","hour","ink","jig","jewel","key","knack","lantern","law","ledger","lesson","letter","light","link","lock","lore","map","mind","mine","measure","metal","mill","mine","name","needle","notċ","nubbin","number","pack","paper","pattern","pin","pinky","pipe","plan","pocket","print","project","pulley","quartz","quill","quiver","rack","rascal","ratċet","rock","ruby","ruin","rule","rump","rust","root","sapphire","saw","sċeme","sċool","screw","scuttle","seal","set","ʃoe","ʃop","ʃovel","ʃroom","slot","smock","snack","song","soot","soup","spell","spring","spunk","song","sprocket","stamp","steam","stone","story","study","sugar","switċ","system","tally","þimble","þingy","þread","þumb","time","toe","tome","tongue","tooþ","tool","toy","trick","trinket","tummy","tunnel","wagon","wax","way","whatsit","widget","wit","well","wheel","whistle","work","worm","wrenċ")
-$RockAgents = @("belly","bender","berger","binder","biter","bits","breaker","brow","buddy","buffer","builder","caster","catċer","ċecker","ċiller","ċipper","ċum","climber","clunker","cotter","counter","crafter","cutter","dancer","digger","driller","dinger","dripper","dropper","fellow","file","finder","fixer","framer","fuser","giver","glitter","gnome","goggles","helmer","hemmer","heimer","hider","holder","home","hopper","-inker","-itċer","jigger","joker","judger","keeper","kicker","knacker","knickers","knocker","locker","lover","mapper","mate","meister","meter","meyer","monċ","more","munċer","nacker","packer","pants","picker","plotter","puffer","pocket","poliʃ","prank","printer","puller","punċer","puʃer","presser","maker","mallow","maker","marker","mender","miner","noggin","officer","planner","pocket","putter","reader","roller","rooter","scamp","scooper","sealer","seeker","setter","ʃaper","ʃarer","ʃiner","signer","sinker","snacker","snatċer","snipper","speaker","spinner","stamper","stopper","sweeper","taster","teaċer","teller","tender","þrower","þumper","ticker","tinker","tricker","tucker","twitċer","watċer","winder","witċer","worker","writer")
-$RockAdjectives = @("best","brass","bright","candy","ċeery","ċitty","ċrome","clean","clever","cold","copper","crackle","crafty","crumb","deep","dizzy","double","drive","dusty","fair","fault","fraggle","frolic","funny","gem","gold","good","grumble","happy","hard","high","inky","itċy","knotty","long","lost","loud","low","magic","munċ","naughty","next","noble","odd","old","over","pocket","power","quartz","quick","rusty","safe","ʃort","silver","sledge","sly","soft","soot","spore","steady","strict","sweet","tender","tinker","tiny","top","trick","tricksy","twitċy","under","twinkle","warm","wee","witty","wonder","work")
+$RockNouns = @("aim","angle","bang","bauble","beard","bell","belly","belt","bench","book","boot","bottle","brass","buckle","buddy","bug","button","candle","candy","cane","cap","cavern","chime","chip","chortle","clock","clog","coal","cog","copper","craft","crate","crumb","cubby","crystal","cycle","design","dial","dingle","doodad","drill","drip","engine","fault","figure","finger","fire","fizzle","flange","flip","flux","fumble","fungus","fuse","gadget","garnet","gas","gavel","gear","gem","gimmick","gizmo","glimmer","glove","grub","hammer","hatch","hour","ink","jig","jewel","key","knack","lantern","law","ledger","lesson","letter","light","link","lock","lore","map","mind","mine","measure","metal","mill","mine","name","needle","notch","nubbin","number","pack","paper","pattern","pin","pinky","pipe","plan","pocket","print","project","pulley","quartz","quill","quiver","rack","rascal","ratchet","rock","ruby","ruin","rule","rump","rust","root","sapphire","saw","scheme","school","screw","scuttle","seal","set","shoe","shop","shovel","shroom","slot","smock","snack","song","soot","soup","spell","spring","spunk","song","sprocket","stamp","steam","stone","story","study","sugar","switch","system","tally","thimble","thingy","thread","thumb","time","toe","tome","tongue","tooth","tool","toy","trick","trinket","tummy","tunnel","wagon","wax","way","whatsit","widget","wit","well","wheel","whistle","work","worm","wrench")
+$RockAgents = @("belly","bender","berger","binder","biter","bits","breaker","brow","buddy","buffer","builder","caster","catcher","checker","chiller","chipper","chum","climber","clunker","cotter","counter","crafter","cutter","dancer","digger","driller","dinger","dripper","dropper","fellow","file","finder","fixer","framer","fuser","giver","glitter","gnome","goggles","helmer","hemmer","heimer","hider","holder","home","hopper","-inker","-itcher","jigger","joker","judger","keeper","kicker","knacker","knickers","knocker","locker","lover","mapper","mate","meister","meter","meyer","monch","more","muncher","nacker","packer","pants","picker","plotter","puffer","pocket","polish","prank","printer","puller","puncher","pusher","presser","maker","mallow","maker","marker","mender","miner","noggin","officer","planner","pocket","putter","reader","roller","rooter","scamp","scooper","sealer","seeker","setter","shaper","sharer","shiner","signer","sinker","snacker","snatcher","snipper","speaker","spinner","stamper","stopper","sweeper","taster","teacher","teller","tender","thrower","thumper","ticker","tinker","tricker","tucker","twitcher","watcher","winder","witcher","worker","writer")
+$RockAdjectives = @("best","brass","bright","candy","cheery","chitty","chrome","clean","clever","cold","copper","crackle","crafty","crumb","deep","dizzy","double","drive","dusty","fair","fault","fraggle","frolic","funny","gem","gold","good","grumble","happy","hard","high","inky","itchy","knotty","long","lost","loud","low","magic","munch","naughty","next","noble","odd","old","over","pocket","power","quartz","quick","rusty","safe","short","silver","sledge","sly","soft","soot","spore","steady","strict","sweet","tender","tinker","tiny","top","trick","tricksy","twitchy","under","twinkle","warm","wee","witty","wonder","work") 
 
 $RockAlliteritiveNounUniques = $RockNouns | sort | %{$_[0]} | Get-Unique
 $RockAlliteritiveAgentUniques = $RockAgents | sort | %{$_[0]} | Get-Unique
@@ -207,14 +215,22 @@ $RockAlliteritiveAdjectiveUniques = $RockAdjectives | sort | %{$_[0]} | Get-Uniq
 #region The following arrays may be implemented in the future. Unsure.
 $RockFriends = @()
 $RockAnimalFriends = @("ant","bug","grub","worm")
-$RockPlantFriends = @("muʃroom","root","ʃroom")
+$RockPlantFriends = @("mushroom","root","shroom")
 $RockFriends += $RockAnimalFriends
 $RockFriends += $RockPlantFriends
-$RockLocales = @("class","cavern","mine","office","sċool","ʃop","tunnel")
+$RockLocales = @("class","cavern","mine","office","sċool","shop","tunnel")
 $RockFluids = @("oil","water")
 #endregion
 
 #region Expansion
+
+##############
+##############
+##          ##
+## Surnames ##
+##          ##
+##############
+##############
 
 ######
 #Rock#
@@ -1754,6 +1770,10 @@ $RockAdjectiveObjects = @(
 			IPA="wɜrk"
 		}
     )
+
+$RockNounPhoneticUniques = $RockNounObjects.IPA | %{"$(if($_[0] -eq "ˈ"){$_[1]}else{$_[0]})"} | Sort-Object | Get-Unique
+$RockAgentPhoneticUniques = $RockAgentObjects.IPA | %{"$(if($_[0] -eq "ˈ"){$_[1]}else{$_[0]})"} | Sort-Object | Get-Unique
+$RockAdjectivePhoneticUniques = $RockAdjectiveObjects.IPA | %{"$(if($_[0] -eq "ˈ"){$_[1]}else{$_[0]})"} | Sort-Object | Get-Unique 
 
 ########
 #Forest#
@@ -3534,27 +3554,59 @@ $ForestAdjectiveObjects = @(
 
 )
 
-#endregion
-
-$ForestNouns = @("aloe","acorn","alder","apple","autumn","barb","bark","basket","bean","beard","bed","bee","beet","bell","belly","berry","birċ","blanket","bloom","bobbin","bottle","bough","breeze","bubble","buckle","bud","buddy","bug","bulb","bur","buscuit","buʃ","butter","button","candle","candy","cane","cap","cedar","ċerry","cider","ċive","circle","cloud","clover","comb","conker","craft","cream","critter","crumb","crystal","cup","day","daze","dingle","dew","dill","dream","drip","dumpling","dusk","dwale","earþ","egg","elder","elm","fern","flip","flower","field","fig","finger","fir","fizzle","forest","fork","fruit","fumble","fungus","game","garden","garland","garlic","germ","ginger","glade","glove","grass","grub","harvest","hazel","hearþ","hedge","hemlock","hive","hollow","holly","home","honey","horn","hunt","iris","ivy","jam","land","leaf","leek","light","lilly","litter","lore","magic","maple","marʃ","meadow","melon","milk","mint","moon","morning","moss","mud","muffin","muʃroom","nap","nature","nectar","needle","nest","nettle","night","nubbin","nut","oak","oaþ","onion","orċid","paddy","pansy","parsley","parsnip","patċ","paþ","pea","peaċ","pepper","petal","pillow","pine","pinky","pipe","plum","pocket","pond","poppy","pot","prank","promise","prune","puddle","puff","pumpkin","rain","rascal","root","rose","sap","scuttle","seed","ʃade","ʃoe","ʃoot","ʃroom","ʃrub","sky","slug","snail","spice","spoon","snack","song","soup","spell","splinter","spore","song","sprig","spring","spud","spruce","spunk","stem","stone","stew","story","sugar","summer","sun","star","stick","stream","stump","syrup","tater","tea","þimble","þistle","þorn","þread","timber","tonic","truffle","trunk","þumb","toe","tongue","tooþ","tree","tuft","tulip","turnip","twig","vision","waffle","wall","water","wax","wind","wit","weed","well","whistle","willow","winter","wiʃ","wisp","wode","wood","wort","yew")
-$ForestAgents = @("belly","berry","biter","bits","bobber","bruʃ","buddy","bun","buzzer","cake","caller","caster","catċer","ċiller","ċum","climber","cooker","crafter","critter","dancer","dinger","dreamer","dropper","fellow","field","finder","fixer","flicker","flitter","flower","friend","friend","friend","gnome","giver","grower","gum","heimer","helmer","hider","holder","home","hopper","hummer","hunter","-itċer","jelly","joker","juicer","keeper","knickers","knocker","knot","lover","maker","mallow","mannin","mate","meister","mender","meyer","monċ","more","munċ","munċer","namer","noggin","pants","picker","pocket","planter","player","plucker","prank","puffer","puller","puʃer","putter","patċer","pocket","ranger","rooter","rump","sage","scamp","scratċer","seeker","seer","ʃaper","ʃarer","sipper","smoker","snacker","snatċer","speaker","splitter","spinner","stamper","stinger","stitċer","stopper","straw","supper","taster","teaċer","teller","tender","þrower","þumper","tinker","toker","tracker","trapper","tricker","tucker","tumbler","tummy","twitċer","vine","wander","watċer","weaver","weeder","wicker","wiʃer","witċer","worker")
-$ForestAdjectives = @("bright","butter","calm","candy","ċeery","ċortle","clean","clever","cold","cozy","crafty","crumb","dizzy","double","early","easy","fair","fey","frolic","funny","glad","good","green","grumble","half","happy","hard","high","humming","itċy","jelly","lax","long","lost","loud","low","magic","mellow","muddy","munċ","naughty","nutty","oak","odd","over","pocket","puff","quick","ripe","ʃady","ʃort","silver","sly","soft","spore","steady","stink","sugar","sunny","sweet","tender","þunder","tiny","tricksy","twitċy","twinkle","warm","wee","wild","witty","wonder","wood")
-$ForestFriends = @()
-$AllForestPlants = @("aloe","apple","bean","beet","berry","birċ","bloom","buʃ","cedar","ċerry","ċive","clover","dill","dwale","elm","fern","flower","fig","fir","fruit","fungus","garlic","ginger","grass","hazel","hemlock","holly","iris","ivy","leek","lilly","maple","melon","mint","moss","muʃroom","nettle","oak","onion","orċid","paddy","pansy","parsley","parsnip","pea","peaċ","pepper","pine","plum","pumpkin","poppy","rose","ʃroom","ʃrub","spud","tater","truffle","tree","tulip","turnip","weed","willow","wort","yew")
-$ForestAnimalFriends = @("badger","beaver","bee","beetle","bird","bug","bunny","cricket","duck","fawn","ferret","fox","frog","goose","grub","hare","hedgehog","mouse","moþ","newt","owl","rabbit","robin","slug","snail","sparrow","squirrel","swan","toad","woodpecker","worm")
-$ForestPlantFriends = @("berry","birċ","buʃ","cedar","clover","elm","fern","flower","fig","fir","fruit","fungus","hazel","hemlock","holly","ivy","lilly","maple","moss","muʃroom","nettle","oak","pansy","pine","ʃroom","ʃrub","truffle","tree","willow","yew")
-$ForestFriends += $ForestAnimalFriends
-$ForestFriends += $ForestPlantFriends
-
 $ForestNounPhoneticUniques = $ForestNounObjects.IPA | %{"$(if($_[0] -eq "ˈ"){$_[1]}else{$_[0]})"} | Sort-Object | Get-Unique
 $ForestAgentPhoneticUniques = $ForestAgentObjects.IPA | %{"$(if($_[0] -eq "ˈ"){$_[1]}else{$_[0]})"} | Sort-Object | Get-Unique
 $ForestAdjectivePhoneticUniques = $ForestAdjectiveObjects.IPA | %{"$(if($_[0] -eq "ˈ"){$_[1]}else{$_[0]})"} | Sort-Object | Get-Unique
 
+#endregion
+
+$ForestNouns = @("aloe","acorn","alder","apple","autumn","barb","bark","basket","bean","beard","bed","bee","beet","bell","belly","berry","birch","biscuit","blanket","bloom","bobbin","bottle","bough","breeze","bubble","buckle","bud","buddy","bug","bulb","bur","bush","butter","button","candle","candy","cane","cap","cedar","cherry","cider","chive","circle","cloud","clover","comb","conker","craft","cream","critter","crumb","crystal","cup","day","daze","dingle","dew","dill","dream","drip","dumpling","dusk","dwale","earth","egg","elder","elm","fern","flip","flower","field","fig","finger","fir","fizzle","forest","fork","fruit","fumble","fungus","game","garden","garland","garlic","germ","ginger","glade","glove","grass","grub","harvest","hazel","hearth","hedge","hemlock","hive","hollow","holly","home","honey","horn","hunt","iris","ivy","jam","land","leaf","leek","light","lilly","litter","lore","magic","maple","marsh","meadow","melon","milk","mint","moon","morning","moss","mud","muffin","mushroom","nap","nature","nectar","needle","nest","nettle","night","nubbin","nut","oak","oath","onion","orchid","paddy","pansy","parsley","parsnip","patch","path","pea","peach","pepper","petal","pillow","pine","pinky","pipe","plum","pocket","pond","poppy","pot","prank","promise","prune","puddle","puff","pumpkin","rain","rascal","root","rose","sap","scuttle","seed","shade","shoe","shoot","shroom","shrub","sky","slug","snail","spice","spoon","snack","song","soup","spell","splinter","spore","song","sprig","spring","spud","spruce","spunk","stem","stone","stew","story","sugar","summer","sun","star","stick","stream","stump","syrup","tater","tea","thimble","thistle","thorn","thread","timber","tonic","truffle","trunk","thumb","toe","tongue","tooth","tree","tuft","tulip","turnip","twig","vision","waffle","wall","water","wax","wind","wit","weed","well","whistle","willow","winter","wish","wisp","wode","wood","wort","yew")
+$ForestAgents = @("belly","berry","biter","bits","bobber","brush","buddy","bun","buzzer","cake","caller","caster","catcher","chiller","chum","climber","cooker","crafter","critter","dancer","dinger","dreamer","dropper","fellow","field","finder","fixer","flicker","flitter","flower","friend","friend","friend","gnome","giver","grower","gum","heimer","helmer","hider","holder","home","hopper","hummer","hunter","-itcher","jelly","joker","juicer","keeper","knickers","knocker","knot","lover","maker","mallow","mannin","mate","meister","mender","meyer","monch","more","munch","muncher","namer","noggin","pants","picker","pocket","planter","player","plucker","prank","puffer","puller","pusher","putter","patcher","pocket","ranger","rooter","rump","sage","scamp","scratcher","seeker","seer","shaper","sharer","sipper","smoker","snacker","snatcher","speaker","splitter","spinner","stamper","stinger","stitcher","stopper","straw","supper","taster","teacher","teller","tender","thrower","thumper","tinker","toker","tracker","trapper","tricker","tucker","tumbler","tummy","twitcher","vine","wander","watcher","weaver","weeder","wicker","wisher","witcher","worker")
+$ForestAdjectives = @("bright","butter","calm","candy","cheery","chortle","clean","clever","cold","cozy","crafty","crumb","dizzy","double","early","easy","fair","fey","frolic","funny","glad","good","green","grumble","half","happy","hard","high","humming","itchy","jelly","lax","long","lost","loud","low","magic","mellow","muddy","munch","naughty","nutty","oak","odd","over","pocket","puff","quick","ripe","shady","short","silver","sly","soft","spore","steady","stink","sugar","sunny","sweet","tender","thunder","tiny","tricksy","twitchy","twinkle","warm","wee","wild","witty","wonder","wood")
+$ForestFriends = @()
+$AllForestPlants = @("aloe","apple","bean","beet","berry","birch","bloom","bush","cedar","cherry","chive","clover","dill","dwale","elm","fern","flower","fig","fir","fruit","fungus","garlic","ginger","grass","hazel","hemlock","holly","iris","ivy","leek","lilly","maple","melon","mint","moss","mushroom","nettle","oak","onion","orchid","paddy","pansy","parsley","parsnip","pea","peach","pepper","pine","plum","pumpkin","poppy","rose","shroom","shrub","spud","tater","truffle","tree","tulip","turnip","weed","willow","wort","yew")
+$ForestAnimalFriends = @("badger","beaver","bee","beetle","bird","bug","bunny","cricket","duck","fawn","ferret","fox","frog","goose","grub","hare","hedgehog","mouse","moth","newt","owl","rabbit","robin","slug","snail","sparrow","squirrel","swan","toad","woodpecker","worm")
+$ForestPlantFriends = @("berry","birch","bush","cedar","clover","elm","fern","flower","fig","fir","fruit","fungus","hazel","hemlock","holly","ivy","lilly","maple","moss","mushroom","nettle","oak","pansy","pine","shroom","shrub","truffle","tree","willow","yew")
+$ForestFriends += $ForestAnimalFriends
+$ForestFriends += $ForestPlantFriends
+
 #region The following arrays may be implemented in the future. Unsure.
-$ForestFoods = @("apple","bean","beet","berry","bug","bun","buscuit","butter","cake","candy","ċerry","ċive","cream","dill","dumpling","egg","fig","fruit","fungus","garlic","ginger","grub","gum","hazel","hemlock","honey","jam","jelly","leek","maple","melon","mint","muffin","muʃroom","nettle","nut","onion","parsley","parsnip","pea","peaċ","pepper","plum","pumpkin","root","sap","seed","ʃroom","spice","spud","sugar","syrup","tea","tater","truffle","turnip","waffle","water","wort")
+$ForestFoods = @("apple","bean","beet","berry","bug","bun","biscuit","butter","cake","candy","cherry","chive","cream","dill","dumpling","egg","fig","fruit","fungus","garlic","ginger","grub","gum","hazel","hemlock","honey","jam","jelly","leek","maple","melon","mint","muffin","mushroom","nettle","nut","onion","parsley","parsnip","pea","peach","pepper","plum","pumpkin","root","sap","seed","shroom","spice","spud","sugar","syrup","tea","tater","truffle","turnip","waffle","water","wort")
 $ForestLocales = @()
 $ForestFluids = @("cider","dew","honey","juice","milk","nectar","pond","puddle","sap","soup","stew","tea","tonic","water")
 #endregion
+
+function Get-Alliterative {
+
+    Param(
+        [parameter(Mandatory=$True)]
+        [ValidateSet("Rock","Forest")]
+        [string]$GnomeType,
+        [parameter(Mandatory=$True)]
+        [ValidateSet("Noun","Agent","Adjective")]
+        [string]$Set1,
+        [parameter(Mandatory=$True)]
+        [ValidateSet("Noun","Agent","Adjective")]
+        [string]$Set2
+    )
+
+    $CommonSounds = ''
+
+    if((Get-Variable "$($GnomeType)$($Set1)PhoneticUniques").Value.Count -gt (Get-Variable "$($GnomeType)$($Set2)PhoneticUniques").Value.Count){
+                
+        $CommonSounds = (Get-Variable "$($GnomeType)$($Set2)PhoneticUniques").Value | ?{(Get-Variable "$($GnomeType)$($Set1)PhoneticUniques").Value -contains $_}
+                    
+    }else{
+                
+        $CommonSounds = (Get-Variable "$($GnomeType)$($Set1)PhoneticUniques").Value | ?{(Get-Variable "$($GnomeType)$($Set2)PhoneticUniques").Value -contains $_}
+                    
+    }
+
+    #Remove duplicates from one array or the other... Then:
+    $StartingSound = ''
+    $StartingSound = $CommonSounds[(Get-Random -Minimum 0 -Maximum ($CommonSounds.Count))]
+
+}
 
 function Get-GnomeSurname {
     
@@ -3611,16 +3663,27 @@ function Get-GnomeSurname {
 
             if($Roll -eq 2){
             
-                $CommonSounds = ''
+                $TryAgain = $False
 
-                if($RockNounPhoneticUniques.Count -gt $RockAgentPhoneticUniques.Count){
+                while($TryAgain -eq $False){
+
+                    $RockNounPhoneticUniques = $RockNounObjects.IPA | %{"$(if($_[0] -eq "ˈ"){$_[1]}else{$_[0]})"} | Sort-Object | Get-Unique
+                    $RockAgentPhoneticUniques = $RockAgentObjects.IPA | %{"$(if($_[0] -eq "ˈ"){$_[1]}else{$_[0]})"} | Sort-Object | Get-Unique
+
+                    $CommonSounds = ''
+
+                    if($RockNounPhoneticUniques.Count -gt $RockAgentPhoneticUniques.Count){
                 
-                    $CommonSounds = $RockAgentPhoneticUniques | ?{$RockNounPhoneticUniques -contains $_}
+                        $CommonSounds = $RockAgentPhoneticUniques | ?{$RockNounPhoneticUniques -contains $_}
                     
-                }else{
+                    }else{
                 
-                    $CommonSounds = $RockNounPhoneticUniques | ?{$RockAgentPhoneticUniques -contains $_}
+                        $CommonSounds = $RockNounPhoneticUniques | ?{$RockAgentPhoneticUniques -contains $_}
                     
+                    }
+
+                    if($CommonSounds){}
+
                 }
 
                 $StartingSound = ''
