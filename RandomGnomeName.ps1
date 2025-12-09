@@ -3664,8 +3664,8 @@ function Get-GnomeSurname {
         #Additional logic needed to make satisfying combinations of random nouns - increase Maximum to 5 once/if this is done
         $Roll = Get-Random -Minimum 1 -Maximum 4
 
-        if($Mode -eq $Alliterative){
-        
+        if($Mode -eq 'Alliterative'){
+
             if($Roll -eq 1){
 
                 $StartingSound = ''
@@ -3776,7 +3776,7 @@ function Get-GnomeSurname {
         #Additional logic needed to make satisfying combinations of random nouns - increase Maximum to 5 once/if this is done
         $Roll = Get-Random -Minimum 1 -Maximum 4
 
-        if($Mode -eq $Alliterative){
+        if($Mode -eq 'Alliterative'){
         
             if($Roll -eq 1){
             
