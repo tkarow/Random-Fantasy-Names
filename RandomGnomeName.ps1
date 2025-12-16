@@ -591,10 +591,6 @@ $RockNounObjects = @(
 			IPA="mɪl"
 		},
 		[pscustomobject]@{
-			Word=“mine";
-			IPA="maɪn"
-		},
-		[pscustomobject]@{
 			Word=“name";
 			IPA="neɪm"
 		},
@@ -1770,6 +1766,8 @@ $RockAdjectiveObjects = @(
 			IPA="wɜrk"
 		}
     )
+
+$RockRhymingSounds = @("eɪ","əl","æ","ɔ","ɪr","ɛl","li","ɛn","u","təl","di","ʌ","ən","vər","aɪ","ɪ","ɑ","oʊ","æf","kəl","aɪn","ʌk","oʊ","ʊər","ɪŋk","æk","ɑk","ɔr","ɑp","ɔŋ","ɪŋ","ri","ɪʧ","ɛd","ʌm","ɪk")
 
 $RockNounPhoneticUniques = $RockNounObjects.IPA | %{"$(if($_[0] -eq "ˈ"){$_[1]}else{$_[0]})"} | Sort-Object | Get-Unique
 $RockAgentPhoneticUniques = $RockAgentObjects.IPA | %{"$(if($_[0] -eq "ˈ"){$_[1]}else{$_[0]})"} | Sort-Object | Get-Unique
@@ -3638,6 +3636,87 @@ function Get-Alliterative {
     $StartingSound = ''
     $StartingSound = $CommonSounds[(Get-Random -Minimum 0 -Maximum ($CommonSounds.Count))]
     if($ReturnSet -eq $True){$CommonSounds}else{$StartingSound}
+
+}
+
+function Get-Rhyming {
+
+    Param(
+        [parameter(Mandatory=$True)]
+        [ValidateSet("Rock","Forest")]
+        [string]$GnomeType,
+        [parameter(Mandatory=$True)]
+        [ValidateSet("Noun","Agent","Adjective")]
+        [string]$Set1,
+        [parameter(Mandatory=$True)]
+        [ValidateSet("Noun","Agent","Adjective")]
+        [string]$Set2,
+        [parameter(Mandatory=$False)]
+        [bool]$ReturnSet
+    )
+
+    $ObjectSet1 = ''
+    $ObjectSet1 = (Get-Variable "$($GnomeType)$($Set1)Objects").Value
+
+    $ObjectSet2 = ''
+    $ObjectSet2 = (Get-Variable "$($GnomeType)$($Set2)Objects").Value
+
+    $RhymingSet1 = @()
+    $RhymingSet2 = @()
+
+    $WordPool1 = @()
+    $WordPool2 = @()
+
+    foreach($Sound in (Get-Variable "$($GnomeType)RhymingSounds").Value){
+    
+        foreach($Word1 in $ObjectSet1){
+            
+            $SubstringStart1 = ''
+            $SubstringStart1 = if($Word1.IPA.Length - 1 - $Sound.Length -ge 0){$Word1.IPA.Length - 1 - $Sound.Length}else{0}
+
+            $SubstringCount1 = ''
+            $SubstringCount1 = $Word1.IPA.Length - $SubstringStart1 - 1
+
+            if(($Word1.IPA.Substring($SubstringStart1,$SubstringCount1) -like "*$($Sound)*") -and ($RhymingSet1 -notcontains $Sound)){$RhymingSet1 += $Sound}
+            if($Word1.IPA.Substring($SubstringStart1,$SubstringCount1) -like "*$($Sound)*"){$WordPool1 += [pscustomobject]@{Word=$Word1.Word;IPA=$word1.IPA;RhymingSound=$Sound}}
+
+        }
+
+        foreach($Word2 in $ObjectSet2){
+            
+            $SubstringStart2 = ''
+            $SubstringStart2 = if($Word2.IPA.Length - 1 - $Sound.Length -ge 0){$Word2.IPA.Length - 1 - $Sound.Length}else{0}
+
+            $SubstringCount2 = ''
+            $SubstringCount2 = $Word2.IPA.Length - $SubstringStart2 - 1
+
+            if(($Word2.IPA.Substring($SubstringStart2,$SubstringCount2) -like "*$($Sound)*") -and ($RhymingSet2 -notcontains $Sound)){$RhymingSet2 += $Sound}
+            if($Word2.IPA.Substring($SubstringStart2,$SubstringCount2) -like "*$($Sound)*"){$WordPool2 += [pscustomobject]@{Word=$Word2.Word;IPA=$word2.IPA;RhymingSound=$Sound}}
+
+        }
+
+    }
+
+    $RhymingSet = $RhymingSet1 | ?{$RhymingSet2 -contains $_}
+
+    if($ReturnSet -eq $True){$RhymingSet}else{
+    
+        $RandomSound = ""
+        $RandomSound = $RhymingSet[(Get-Random -Minimum 0 -Maximum ($RhymingSet.Count))]
+
+        $Name = ""
+        $NameConstructor1 = ""
+        $NameConstructor2 = ""
+
+        $NameConstructor1 = $WordPool1 | ?{$_.RhymingSound -eq $RandomSound}
+        if(($NameConstructor1 | Measure).Count -gt 1){$NameConstructor1 = $NameConstructor1[(Get-Random -Minimum 0 -Maximum ($NameConstructor1.Count))]}
+
+        $NameConstructor2 = $WordPool2 | ?{$_.RhymingSound -eq $RandomSound}
+        if(($NameConstructor2 | Measure).Count -gt 1){$NameConstructor2 = $NameConstructor2[(Get-Random -Minimum 0 -Maximum ($NameConstructor2.Count))]}
+
+        "$($NameConstructor1.WOrd)$($NameConstructor2.Word)"
+
+    }
 
 }
 
