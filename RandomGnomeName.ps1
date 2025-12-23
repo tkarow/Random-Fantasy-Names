@@ -1769,6 +1769,88 @@ $RockAdjectiveObjects = @(
 
 $RockRhymingSounds = @("eɪ","əl","æ","ɔ","ɪr","ɛl","li","ɛn","u","təl","di","ʌ","ən","vər","aɪ","ɪ","ɑ","oʊ","æf","kəl","aɪn","ʌk","oʊ","ʊər","ɪŋk","æk","ɑk","ɔr","ɑp","ɔŋ","ɪŋ","ri","ɪʧ","ɛd","ʌm","ɪk")
 
+#region Dynamically populate rhyme sounds
+$RockRhymingSoundsDynamic = @()
+
+foreach($Word in $RockNounObjects.IPA){
+
+    foreach($Number in (4,3,2)){
+
+        $Word = $Word.Replace('ˈ','')
+        $Word = $Word.Replace('ˌ','')
+
+        $SubStringLength = ''
+        $SubStringLength = $Number
+        if($Word.Length -lt $SubStringLength){$SubStringLength = $Word.Length}
+    
+        $StartIndex = ''
+        $StartIndex = $Word.Length - $Number - 1
+        if($StartIndex -lt 0){$StartIndex = 0}
+    
+        $Construct = ''
+        $Construct = $Word.Substring($StartIndex,$SubStringLength)
+
+        if(($RockRhymingSoundsDynamic -notcontains $Construct) -and ($Construct.Length -gt 1)){$RockRhymingSoundsDynamic += $Construct}
+
+        if($Error.Count -gt 0){Write-Host "$Word" -ForegroundColor Red;$Error.Clear()}
+    
+    }
+
+}
+
+foreach($Word in $RockAgentObjects.IPA){
+
+    foreach($Number in (4,3,2)){
+
+        $Word = $Word.Replace('ˈ','')
+        $Word = $Word.Replace('ˌ','')
+
+        $SubStringLength = ''
+        $SubStringLength = $Number
+        if($Word.Length -lt $SubStringLength){$SubStringLength = $Word.Length}
+    
+        $StartIndex = ''
+        $StartIndex = $Word.Length - $Number - 1
+        if($StartIndex -lt 0){$StartIndex = 0}
+    
+        $Construct = ''
+        $Construct = $Word.Substring($StartIndex,$SubStringLength)
+
+        if(($RockRhymingSoundsDynamic -notcontains $Construct) -and ($Construct.Length -gt 1)){$RockRhymingSoundsDynamic += $Construct}
+
+        if($Error.Count -gt 0){Write-Host "$Word" -ForegroundColor Red;$Error.Clear()}
+    
+    }
+
+}
+
+foreach($Word in $RockAdjectiveObjects.IPA){
+
+    foreach($Number in (4,3,2)){
+
+        $Word = $Word.Replace('ˈ','')
+        $Word = $Word.Replace('ˌ','')
+
+        $SubStringLength = ''
+        $SubStringLength = $Number
+        if($Word.Length -lt $SubStringLength){$SubStringLength = $Word.Length}
+    
+        $StartIndex = ''
+        $StartIndex = $Word.Length - $Number - 1
+        if($StartIndex -lt 0){$StartIndex = 0}
+    
+        $Construct = ''
+        $Construct = $Word.Substring($StartIndex,$SubStringLength)
+
+        if(($RockRhymingSoundsDynamic -notcontains $Construct) -and ($Construct.Length -gt 1)){$RockRhymingSoundsDynamic += $Construct}
+
+        if($Error.Count -gt 0){Write-Host "$Word" -ForegroundColor Red;$Error.Clear()}
+    
+    }
+
+}
+#endregion
+
 $RockNounPhoneticUniques = $RockNounObjects.IPA | %{"$(if($_[0] -eq "ˈ"){$_[1]}else{$_[0]})"} | Sort-Object | Get-Unique
 $RockAgentPhoneticUniques = $RockAgentObjects.IPA | %{"$(if($_[0] -eq "ˈ"){$_[1]}else{$_[0]})"} | Sort-Object | Get-Unique
 $RockAdjectivePhoneticUniques = $RockAdjectiveObjects.IPA | %{"$(if($_[0] -eq "ˈ"){$_[1]}else{$_[0]})"} | Sort-Object | Get-Unique 
@@ -3552,6 +3634,88 @@ $ForestAdjectiveObjects = @(
 
 )
 
+#region Dynamically populate rhyme sounds
+$ForestRhymingSoundsDynamic = @()
+
+foreach($Word in $ForestNounObjects.IPA){
+
+    foreach($Number in (4,3,2)){
+
+        $Word = $Word.Replace('ˈ','')
+        $Word = $Word.Replace('ˌ','')
+
+        $SubStringLength = ''
+        $SubStringLength = $Number
+        if($Word.Length -lt $SubStringLength){$SubStringLength = $Word.Length}
+    
+        $StartIndex = ''
+        $StartIndex = $Word.Length - $Number - 1
+        if($StartIndex -lt 0){$StartIndex = 0}
+    
+        $Construct = ''
+        $Construct = $Word.Substring($StartIndex,$SubStringLength)
+
+        if(($ForestRhymingSoundsDynamic -notcontains $Construct) -and ($Construct.Length -gt 1)){$ForestRhymingSoundsDynamic += $Construct}
+
+        if($Error.Count -gt 0){Write-Host "$Word" -ForegroundColor Red;$Error.Clear()}
+    
+    }
+
+}
+
+foreach($Word in $ForestAgentObjects.IPA){
+
+    foreach($Number in (4,3,2)){
+
+        $Word = $Word.Replace('ˈ','')
+        $Word = $Word.Replace('ˌ','')
+
+        $SubStringLength = ''
+        $SubStringLength = $Number
+        if($Word.Length -lt $SubStringLength){$SubStringLength = $Word.Length}
+    
+        $StartIndex = ''
+        $StartIndex = $Word.Length - $Number - 1
+        if($StartIndex -lt 0){$StartIndex = 0}
+    
+        $Construct = ''
+        $Construct = $Word.Substring($StartIndex,$SubStringLength)
+
+        if(($ForestRhymingSoundsDynamic -notcontains $Construct) -and ($Construct.Length -gt 1)){$ForestRhymingSoundsDynamic += $Construct}
+
+        if($Error.Count -gt 0){Write-Host "$Word" -ForegroundColor Red;$Error.Clear()}
+    
+    }
+
+}
+
+foreach($Word in $ForestAdjectiveObjects.IPA){
+
+    foreach($Number in (4,3,2)){
+
+        $Word = $Word.Replace('ˈ','')
+        $Word = $Word.Replace('ˌ','')
+
+        $SubStringLength = ''
+        $SubStringLength = $Number
+        if($Word.Length -lt $SubStringLength){$SubStringLength = $Word.Length}
+    
+        $StartIndex = ''
+        $StartIndex = $Word.Length - $Number - 1
+        if($StartIndex -lt 0){$StartIndex = 0}
+    
+        $Construct = ''
+        $Construct = $Word.Substring($StartIndex,$SubStringLength)
+
+        if(($ForestRhymingSoundsDynamic -notcontains $Construct) -and ($Construct.Length -gt 1)){$ForestRhymingSoundsDynamic += $Construct}
+
+        if($Error.Count -gt 0){Write-Host "$Word" -ForegroundColor Red;$Error.Clear()}
+    
+    }
+
+}
+#endregion
+
 $ForestNounPhoneticUniques = $ForestNounObjects.IPA | %{"$(if($_[0] -eq "ˈ"){$_[1]}else{$_[0]})"} | Sort-Object | Get-Unique
 $ForestAgentPhoneticUniques = $ForestAgentObjects.IPA | %{"$(if($_[0] -eq "ˈ"){$_[1]}else{$_[0]})"} | Sort-Object | Get-Unique
 $ForestAdjectivePhoneticUniques = $ForestAdjectiveObjects.IPA | %{"$(if($_[0] -eq "ˈ"){$_[1]}else{$_[0]})"} | Sort-Object | Get-Unique
@@ -3572,6 +3736,86 @@ $ForestFriends += $ForestPlantFriends
 $ForestFoods = @("apple","bean","beet","berry","bug","bun","biscuit","butter","cake","candy","cherry","chive","cream","dill","dumpling","egg","fig","fruit","fungus","garlic","ginger","grub","gum","hazel","hemlock","honey","jam","jelly","leek","maple","melon","mint","muffin","mushroom","nettle","nut","onion","parsley","parsnip","pea","peach","pepper","plum","pumpkin","root","sap","seed","shroom","spice","spud","sugar","syrup","tea","tater","truffle","turnip","waffle","water","wort")
 $ForestLocales = @()
 $ForestFluids = @("cider","dew","honey","juice","milk","nectar","pond","puddle","sap","soup","stew","tea","tonic","water")
+#endregion
+
+#region Dynamically populate rhyme sounds
+foreach($Word in $RockNounObjects.IPA){
+
+    foreach($Number in (4,3,2)){
+
+        $Word = $Word.Replace('ˈ','')
+        $Word = $Word.Replace('ˌ','')
+
+        $SubStringLength = ''
+        $SubStringLength = $Number
+        if($Word.Length -lt $SubStringLength){$SubStringLength = $Word.Length}
+    
+        $StartIndex = ''
+        $StartIndex = $Word.Length - $Number - 1
+        if($StartIndex -lt 0){$StartIndex = 0}
+    
+        $Construct = ''
+        $Construct = $Word.Substring($StartIndex,$SubStringLength)
+
+        if(($RockRhymingSoundsDynamic -notcontains $Construct) -and ($Construct.Length -gt 1)){$RockRhymingSoundsDynamic += $Construct}
+
+        if($Error.Count -gt 0){Write-Host "$Word" -ForegroundColor Red;$Error.Clear()}
+    
+    }
+
+}
+
+foreach($Word in $RockAgentObjects.IPA){
+
+    foreach($Number in (4,3,2)){
+
+        $Word = $Word.Replace('ˈ','')
+        $Word = $Word.Replace('ˌ','')
+
+        $SubStringLength = ''
+        $SubStringLength = $Number
+        if($Word.Length -lt $SubStringLength){$SubStringLength = $Word.Length}
+    
+        $StartIndex = ''
+        $StartIndex = $Word.Length - $Number - 1
+        if($StartIndex -lt 0){$StartIndex = 0}
+    
+        $Construct = ''
+        $Construct = $Word.Substring($StartIndex,$SubStringLength)
+
+        if(($RockRhymingSoundsDynamic -notcontains $Construct) -and ($Construct.Length -gt 1)){$RockRhymingSoundsDynamic += $Construct}
+
+        if($Error.Count -gt 0){Write-Host "$Word" -ForegroundColor Red;$Error.Clear()}
+    
+    }
+
+}
+
+foreach($Word in $RockAdjectiveObjects.IPA){
+
+    foreach($Number in (4,3,2)){
+
+        $Word = $Word.Replace('ˈ','')
+        $Word = $Word.Replace('ˌ','')
+
+        $SubStringLength = ''
+        $SubStringLength = $Number
+        if($Word.Length -lt $SubStringLength){$SubStringLength = $Word.Length}
+    
+        $StartIndex = ''
+        $StartIndex = $Word.Length - $Number - 1
+        if($StartIndex -lt 0){$StartIndex = 0}
+    
+        $Construct = ''
+        $Construct = $Word.Substring($StartIndex,$SubStringLength)
+
+        if(($RockRhymingSoundsDynamic -notcontains $Construct) -and ($Construct.Length -gt 1)){$RockRhymingSoundsDynamic += $Construct}
+
+        if($Error.Count -gt 0){Write-Host "$Word" -ForegroundColor Red;$Error.Clear()}
+    
+    }
+
+}
 #endregion
 
 function Get-Alliterative {
@@ -3715,6 +3959,109 @@ function Get-Rhyming {
         if(($NameConstructor2 | Measure).Count -gt 1){$NameConstructor2 = $NameConstructor2[(Get-Random -Minimum 0 -Maximum ($NameConstructor2.Count))]}
 
         "$($NameConstructor1.WOrd)$($NameConstructor2.Word)"
+
+    }
+
+}
+
+function Get-RhymingDynamic {
+
+    Param(
+        [parameter(Mandatory=$True)]
+        [ValidateSet("Rock","Forest")]
+        [string]$GnomeType,
+        [parameter(Mandatory=$True)]
+        [ValidateSet("Noun","Agent","Adjective")]
+        [string]$Set1,
+        [parameter(Mandatory=$True)]
+        [ValidateSet("Noun","Agent","Adjective")]
+        [string]$Set2,
+        [parameter(Mandatory=$False)]
+        [bool]$ReturnSet
+    )
+
+    $ObjectSet1 = ''
+    $ObjectSet1 = (Get-Variable "$($GnomeType)$($Set1)Objects").Value
+
+    $ObjectSet2 = ''
+    $ObjectSet2 = (Get-Variable "$($GnomeType)$($Set2)Objects").Value
+
+    $RhymingSet1 = @()
+    $RhymingSet2 = @()
+
+    $WordPool1 = @()
+    $WordPool2 = @()
+
+    foreach($Sound in (Get-Variable "$($GnomeType)RhymingSoundsDynamic").Value){
+    
+        foreach($Word1 in $ObjectSet1){
+            
+            $StartIndex = ''
+            $StartIndex = $Word1.IPA.Length - $Sound.Length
+            if($StartIndex -lt 0){$StartIndex = 0}
+
+            $IndexLength = ''
+            $IndexLength = $Sound.Length
+            if($IndexLength -gt $Word1.IPA.Length){$IndexLength = $Word1.IPA.Length}
+
+            if(($Word1.IPA.Substring($StartIndex,$IndexLength) -like "*$($Sound)*") -and ($RhymingSet1 -notcontains $Sound)){$RhymingSet1 += $Sound}
+            if($Word1.IPA.Substring($StartIndex,$IndexLength) -like "*$($Sound)*"){$WordPool1 += [pscustomobject]@{Word=$Word1.Word;IPA=$word1.IPA;RhymingSound=$Sound}}
+
+            if($error.Count -gt 0){$Word1;$error}
+            $error.Clear()
+
+        }
+
+        foreach($Word2 in $ObjectSet2){
+            
+            $StartIndex = ''
+            $StartIndex = $Word2.IPA.Length - $Sound.Length
+            if($StartIndex -lt 0){$StartIndex = 0}
+
+            $IndexLength = ''
+            $IndexLength = $Sound.Length
+            if($IndexLength -gt $Word2.IPA.Length){$IndexLength = $Word2.IPA.Length}
+
+            if(($Word2.IPA.Substring($StartIndex,$IndexLength) -like "*$($Sound)*") -and ($RhymingSet2 -notcontains $Sound)){$RhymingSet2 += $Sound}
+            if($Word2.IPA.Substring($StartIndex,$IndexLength) -like "*$($Sound)*"){$WordPool2 += [pscustomobject]@{Word=$Word2.Word;IPA=$word2.IPA;RhymingSound=$Sound}}
+
+            if($error.Count -gt 0){$Word2;$error}
+            $error.Clear()
+
+        }
+
+    }
+
+    $RhymingSet = $RhymingSet1 | ?{$RhymingSet2 -contains $_}
+
+    if($ReturnSet -eq $True){$RhymingSet}else{
+    
+        While($Try -ne $False){
+
+            $RandomSound = ""
+            $RandomSound = $RhymingSet[(Get-Random -Minimum 0 -Maximum ($RhymingSet.Count))]
+
+            $Name = ""
+            $NameConstructor1 = ""
+            $NameConstructor2 = ""
+
+            $NameConstructor1 = $WordPool1 | ?{$_.RhymingSound -eq $RandomSound}
+            if(($NameConstructor1 | Measure).Count -gt 1){$NameConstructor1 = $NameConstructor1[(Get-Random -Minimum 0 -Maximum ($NameConstructor1.Count))]}
+
+            $NameConstructor2 = $WordPool2 | ?{$_.RhymingSound -eq $RandomSound}
+            if(($NameConstructor2 | Measure).Count -gt 1){$NameConstructor2 = $NameConstructor2[(Get-Random -Minimum 0 -Maximum ($NameConstructor2.Count))]}
+
+            if($NameConstructor1.Word -ne $NameConstructor2.Word){$Try = $False}
+
+        }
+            
+            $Surname = ''
+            if($NameConstructor1.Word[-1] -eq $NameConstructor2.Word[0]){$Surname = "$($NameConstructor1.Word)-$($NameConstructor2.Word)"}else{$Surname = "$($NameConstructor1.Word)$($NameConstructor2.Word)"}
+            if(($NameConstructor1.Word[-1] -eq "t") -and ($NameConstructor2.Word[0] -eq "h")){$Surname = "$($NameConstructor1.Word)-$($NameConstructor2.Word)"}
+
+            $Surname = "$($Surname.Substring(0,1).ToUpper())"+"$($Surname.Substring(1))"
+
+            $Surname
 
     }
 
