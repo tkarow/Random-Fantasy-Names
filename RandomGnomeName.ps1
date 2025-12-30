@@ -1752,8 +1752,6 @@ $RockAdjectiveObjects = @(
 		}
     )
 
-$RockRhymingSounds = @("eɪ","əl","æ","ɔ","ɪr","ɛl","li","ɛn","u","təl","di","ʌ","ən","vər","aɪ","ɪ","ɑ","oʊ","æf","kəl","aɪn","ʌk","oʊ","ʊər","ɪŋk","æk","ɑk","ɔr","ɑp","ɔŋ","ɪŋ","ri","ɪʧ","ɛd","ʌm","ɪk")
-
 #region Dynamically populate rhyme sounds
 $RockRhymingSoundsDynamic = @()
 
@@ -3724,7 +3722,7 @@ $ForestFluids = @("cider","dew","honey","juice","milk","nectar","pond","puddle",
 #region Rock
 foreach($Word in $RockNounObjects.IPA){
 
-    foreach($Number in (4,3,2)){
+    foreach($Number in (4,3)){
 
         $Word = $Word.Replace('ˈ','')
         $Word = $Word.Replace('ˌ','')
@@ -3750,7 +3748,7 @@ foreach($Word in $RockNounObjects.IPA){
 
 foreach($Word in $RockAgentObjects.IPA){
 
-    foreach($Number in (4,3,2)){
+    foreach($Number in (4,3)){
 
         $Word = $Word.Replace('ˈ','')
         $Word = $Word.Replace('ˌ','')
@@ -3776,7 +3774,7 @@ foreach($Word in $RockAgentObjects.IPA){
 
 foreach($Word in $RockAdjectiveObjects.IPA){
 
-    foreach($Number in (4,3,2)){
+    foreach($Number in (4,3)){
 
         $Word = $Word.Replace('ˈ','')
         $Word = $Word.Replace('ˌ','')
@@ -3804,7 +3802,7 @@ foreach($Word in $RockAdjectiveObjects.IPA){
 #region Forest
 foreach($Word in $ForestNounObjects.IPA){
 
-    foreach($Number in (4,3,2)){
+    foreach($Number in (4,3)){
 
         $Word = $Word.Replace('ˈ','')
         $Word = $Word.Replace('ˌ','')
@@ -3830,7 +3828,7 @@ foreach($Word in $ForestNounObjects.IPA){
 
 foreach($Word in $ForestAgentObjects.IPA){
 
-    foreach($Number in (4,3,2)){
+    foreach($Number in (4,3)){
 
         $Word = $Word.Replace('ˈ','')
         $Word = $Word.Replace('ˌ','')
@@ -3856,7 +3854,7 @@ foreach($Word in $ForestAgentObjects.IPA){
 
 foreach($Word in $ForestAdjectiveObjects.IPA){
 
-    foreach($Number in (4,3,2)){
+    foreach($Number in (4,3)){
 
         $Word = $Word.Replace('ˈ','')
         $Word = $Word.Replace('ˌ','')
@@ -4380,7 +4378,6 @@ function Get-GnomeSurname {
 
 }
 
-#Remove matching on two IPA characters as valid rhymes, (avoiding strange vowel sounds being matched as with "Canenoggin," which matches on "ɪn" ("keɪn" and "ˈnɑɡɪn")
 #Add additional elements for objects: tags, (friends, animals, plants, etc.) logical prefixes/suffixes
 #Add "cks" --> "x", "s" --> "z" switch for rock gnomes?
 #Add IPA values for "tricksy" and "twitchy"
