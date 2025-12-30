@@ -204,6 +204,7 @@ function Get-GnomeName {
 
 #####
 
+<#
 $RockNouns = @("aim","angle","bang","bauble","beard","bell","belly","belt","bench","book","boot","bottle","brass","buckle","buddy","bug","button","candle","candy","cane","cap","cavern","chime","chip","chortle","clock","clog","coal","cog","copper","craft","crate","crumb","cubby","crystal","cycle","design","dial","dingle","doodad","drill","drip","engine","fault","figure","finger","fire","fizzle","flange","flip","flux","fumble","fungus","fuse","gadget","garnet","gas","gavel","gear","gem","gimmick","gizmo","glimmer","glove","grub","hammer","hatch","hour","ink","jig","jewel","key","knack","lantern","law","ledger","lesson","letter","light","link","lock","lore","map","mind","mine","measure","metal","mill","mine","name","needle","notch","nubbin","number","pack","paper","pattern","pin","pinky","pipe","plan","pocket","print","project","pulley","quartz","quill","quiver","rack","rascal","ratchet","rock","ruby","ruin","rule","rump","rust","root","sapphire","saw","scheme","school","screw","scuttle","seal","set","shoe","shop","shovel","shroom","slot","smock","snack","song","soot","soup","spell","spring","spunk","song","sprocket","stamp","steam","stone","story","study","sugar","switch","system","tally","thimble","thingy","thread","thumb","time","toe","tome","tongue","tooth","tool","toy","trick","trinket","tummy","tunnel","wagon","wax","way","whatsit","widget","wit","well","wheel","whistle","work","worm","wrench")
 $RockAgents = @("belly","bender","berger","binder","biter","bits","breaker","brow","buddy","buffer","builder","caster","catcher","checker","chiller","chipper","chum","climber","clunker","cotter","counter","crafter","cutter","dancer","digger","driller","dinger","dripper","dropper","fellow","file","finder","fixer","framer","fuser","giver","glitter","gnome","goggles","helmer","hemmer","heimer","hider","holder","home","hopper","-inker","-itcher","jigger","joker","judger","keeper","kicker","knacker","knickers","knocker","locker","lover","mapper","mate","meister","meter","meyer","monch","more","muncher","nacker","packer","pants","picker","plotter","puffer","pocket","polish","prank","printer","puller","puncher","pusher","presser","maker","mallow","maker","marker","mender","miner","noggin","officer","planner","pocket","putter","reader","roller","rooter","scamp","scooper","sealer","seeker","setter","shaper","sharer","shiner","signer","sinker","snacker","snatcher","snipper","speaker","spinner","stamper","stopper","sweeper","taster","teacher","teller","tender","thrower","thumper","ticker","tinker","tricker","tucker","twitcher","watcher","winder","witcher","worker","writer")
 $RockAdjectives = @("best","brass","bright","candy","cheery","chitty","chrome","clean","clever","cold","copper","crackle","crafty","crumb","deep","dizzy","double","drive","dusty","fair","fault","fraggle","frolic","funny","gem","gold","good","grumble","happy","hard","high","inky","itchy","knotty","long","lost","loud","low","magic","munch","naughty","next","noble","odd","old","over","pocket","power","quartz","quick","rusty","safe","short","silver","sledge","sly","soft","soot","spore","steady","strict","sweet","tender","tinker","tiny","top","trick","tricksy","twitchy","under","twinkle","warm","wee","witty","wonder","work") 
@@ -211,6 +212,7 @@ $RockAdjectives = @("best","brass","bright","candy","cheery","chitty","chrome","
 $RockAlliteritiveNounUniques = $RockNouns | sort | %{$_[0]} | Get-Unique
 $RockAlliteritiveAgentUniques = $RockAgents | sort | %{$_[0]} | Get-Unique
 $RockAlliteritiveAdjectiveUniques = $RockAdjectives | sort | %{$_[0]} | Get-Unique
+#>
 
 #region The following arrays may be implemented in the future. Unsure.
 $RockFriends = @()
@@ -3722,9 +3724,12 @@ $ForestAdjectivePhoneticUniques = $ForestAdjectiveObjects.IPA | %{"$(if($_[0] -e
 
 #endregion
 
+<#
 $ForestNouns = @("aloe","acorn","alder","apple","autumn","barb","bark","basket","bean","beard","bed","bee","beet","bell","belly","berry","birch","biscuit","blanket","bloom","bobbin","bottle","bough","breeze","bubble","buckle","bud","buddy","bug","bulb","bur","bush","butter","button","candle","candy","cane","cap","cedar","cherry","cider","chive","circle","cloud","clover","comb","conker","craft","cream","critter","crumb","crystal","cup","day","daze","dingle","dew","dill","dream","drip","dumpling","dusk","dwale","earth","egg","elder","elm","fern","flip","flower","field","fig","finger","fir","fizzle","forest","fork","fruit","fumble","fungus","game","garden","garland","garlic","germ","ginger","glade","glove","grass","grub","harvest","hazel","hearth","hedge","hemlock","hive","hollow","holly","home","honey","horn","hunt","iris","ivy","jam","land","leaf","leek","light","lilly","litter","lore","magic","maple","marsh","meadow","melon","milk","mint","moon","morning","moss","mud","muffin","mushroom","nap","nature","nectar","needle","nest","nettle","night","nubbin","nut","oak","oath","onion","orchid","paddy","pansy","parsley","parsnip","patch","path","pea","peach","pepper","petal","pillow","pine","pinky","pipe","plum","pocket","pond","poppy","pot","prank","promise","prune","puddle","puff","pumpkin","rain","rascal","root","rose","sap","scuttle","seed","shade","shoe","shoot","shroom","shrub","sky","slug","snail","spice","spoon","snack","song","soup","spell","splinter","spore","song","sprig","spring","spud","spruce","spunk","stem","stone","stew","story","sugar","summer","sun","star","stick","stream","stump","syrup","tater","tea","thimble","thistle","thorn","thread","timber","tonic","truffle","trunk","thumb","toe","tongue","tooth","tree","tuft","tulip","turnip","twig","vision","waffle","wall","water","wax","wind","wit","weed","well","whistle","willow","winter","wish","wisp","wode","wood","wort","yew")
 $ForestAgents = @("belly","berry","biter","bits","bobber","brush","buddy","bun","buzzer","cake","caller","caster","catcher","chiller","chum","climber","cooker","crafter","critter","dancer","dinger","dreamer","dropper","fellow","field","finder","fixer","flicker","flitter","flower","friend","friend","friend","gnome","giver","grower","gum","heimer","helmer","hider","holder","home","hopper","hummer","hunter","itcher","jelly","joker","juicer","keeper","knickers","knocker","knot","lover","maker","mallow","mannin","mate","meister","mender","meyer","monch","more","munch","muncher","namer","noggin","pants","picker","pocket","planter","player","plucker","prank","puffer","puller","pusher","putter","patcher","pocket","ranger","rooter","rump","sage","scamp","scratcher","seeker","seer","shaper","sharer","sipper","smoker","snacker","snatcher","speaker","splitter","spinner","stamper","stinger","stitcher","stopper","straw","supper","taster","teacher","teller","tender","thrower","thumper","tinker","toker","tracker","trapper","tricker","tucker","tumbler","tummy","twitcher","vine","wander","watcher","weaver","weeder","wicker","wisher","witcher","worker")
 $ForestAdjectives = @("bright","butter","calm","candy","cheery","chortle","clean","clever","cold","cozy","crafty","crumb","dizzy","double","early","easy","fair","fey","frolic","funny","glad","good","green","grumble","half","happy","hard","high","humming","itchy","jelly","lax","long","lost","loud","low","magic","mellow","muddy","munch","naughty","nutty","oak","odd","over","pocket","puff","quick","ripe","shady","short","silver","sly","soft","spore","steady","stink","sugar","sunny","sweet","tender","thunder","tiny","tricksy","twitchy","twinkle","warm","wee","wild","witty","wonder","wood")
+#>
+
 $ForestFriends = @()
 $AllForestPlants = @("aloe","apple","bean","beet","berry","birch","bloom","bush","cedar","cherry","chive","clover","dill","dwale","elm","fern","flower","fig","fir","fruit","fungus","garlic","ginger","grass","hazel","hemlock","holly","iris","ivy","leek","lilly","maple","melon","mint","moss","mushroom","nettle","oak","onion","orchid","paddy","pansy","parsley","parsnip","pea","peach","pepper","pine","plum","pumpkin","poppy","rose","shroom","shrub","spud","tater","truffle","tree","tulip","turnip","weed","willow","wort","yew")
 $ForestAnimalFriends = @("badger","beaver","bee","beetle","bird","bug","bunny","cricket","duck","fawn","ferret","fox","frog","goose","grub","hare","hedgehog","mouse","moth","newt","owl","rabbit","robin","slug","snail","sparrow","squirrel","swan","toad","woodpecker","worm")
@@ -3739,6 +3744,7 @@ $ForestFluids = @("cider","dew","honey","juice","milk","nectar","pond","puddle",
 #endregion
 
 #region Dynamically populate rhyme sounds
+#region Rock
 foreach($Word in $RockNounObjects.IPA){
 
     foreach($Number in (4,3,2)){
@@ -3818,6 +3824,87 @@ foreach($Word in $RockAdjectiveObjects.IPA){
 }
 #endregion
 
+#region Forest
+foreach($Word in $ForestNounObjects.IPA){
+
+    foreach($Number in (4,3,2)){
+
+        $Word = $Word.Replace('ˈ','')
+        $Word = $Word.Replace('ˌ','')
+
+        $SubStringLength = ''
+        $SubStringLength = $Number
+        if($Word.Length -lt $SubStringLength){$SubStringLength = $Word.Length}
+    
+        $StartIndex = ''
+        $StartIndex = $Word.Length - $Number - 1
+        if($StartIndex -lt 0){$StartIndex = 0}
+    
+        $Construct = ''
+        $Construct = $Word.Substring($StartIndex,$SubStringLength)
+
+        if(($ForestRhymingSoundsDynamic -notcontains $Construct) -and ($Construct.Length -gt 1)){$ForestRhymingSoundsDynamic += $Construct}
+
+        if($Error.Count -gt 0){Write-Host "$Word" -ForegroundColor Red;$Error.Clear()}
+    
+    }
+
+}
+
+foreach($Word in $ForestAgentObjects.IPA){
+
+    foreach($Number in (4,3,2)){
+
+        $Word = $Word.Replace('ˈ','')
+        $Word = $Word.Replace('ˌ','')
+
+        $SubStringLength = ''
+        $SubStringLength = $Number
+        if($Word.Length -lt $SubStringLength){$SubStringLength = $Word.Length}
+    
+        $StartIndex = ''
+        $StartIndex = $Word.Length - $Number - 1
+        if($StartIndex -lt 0){$StartIndex = 0}
+    
+        $Construct = ''
+        $Construct = $Word.Substring($StartIndex,$SubStringLength)
+
+        if(($ForestRhymingSoundsDynamic -notcontains $Construct) -and ($Construct.Length -gt 1)){$ForestRhymingSoundsDynamic += $Construct}
+
+        if($Error.Count -gt 0){Write-Host "$Word" -ForegroundColor Red;$Error.Clear()}
+    
+    }
+
+}
+
+foreach($Word in $ForestAdjectiveObjects.IPA){
+
+    foreach($Number in (4,3,2)){
+
+        $Word = $Word.Replace('ˈ','')
+        $Word = $Word.Replace('ˌ','')
+
+        $SubStringLength = ''
+        $SubStringLength = $Number
+        if($Word.Length -lt $SubStringLength){$SubStringLength = $Word.Length}
+    
+        $StartIndex = ''
+        $StartIndex = $Word.Length - $Number - 1
+        if($StartIndex -lt 0){$StartIndex = 0}
+    
+        $Construct = ''
+        $Construct = $Word.Substring($StartIndex,$SubStringLength)
+
+        if(($ForestRhymingSoundsDynamic -notcontains $Construct) -and ($Construct.Length -gt 1)){$ForestRhymingSoundsDynamic += $Construct}
+
+        if($Error.Count -gt 0){Write-Host "$Word" -ForegroundColor Red;$Error.Clear()}
+    
+    }
+
+} 
+#endregion
+#endregion
+
 function Get-Alliterative {
 
     Param(
@@ -3871,9 +3958,11 @@ function Get-Alliterative {
 
             }
 
+            if(($Wordbank1.Count -gt 0) -and ($Wordbank2.Count -gt 0)){$Try = $false}
+
         }
 
-        if(($Wordbank1.Count -gt 0) -and ($Wordbank2.Count -gt 0)){$Try = $false}
+        #if(($Wordbank1.Count -gt 0) -and ($Wordbank2.Count -gt 0)){$Try = $false}
 
     }
 
@@ -3883,6 +3972,7 @@ function Get-Alliterative {
 
 }
 
+<#
 function Get-Rhyming {
 
     Param(
@@ -3963,6 +4053,7 @@ function Get-Rhyming {
     }
 
 }
+#>
 
 function Get-RhymingDynamic {
 
@@ -4149,46 +4240,78 @@ function Get-GnomeSurname {
 
             }
 
-        }else{
+        }
+        
+        if($Mode -eq 'Rhyming'){
+        
+            if($Roll -eq 1){
+
+                $1 = 'Adjective'
+
+                $2 = 'Agent'
+
+            }
+
+            if($Roll -eq 2){
+
+                $1 = 'Noun'
+
+                $2 = 'Agent'
+
+            }
+
+            if($Roll -eq 3){
+
+                $1 = 'Adjective'
+
+                $2 = 'Noun'
+
+            }
+
+            $Surname = Get-RhymingDynamic -GnomeType Rock -Set1 $1 -Set2 $2
+
+        }
+
+        if($Mode -eq 'Random'){
 
             if($Roll -eq 1){
     
                 $1 =''
-                $1 = $RockAdjectives[(Get-Random -Minimum 0 -Maximum ($RockAdjectives.Count))]
+                $1 = $RockAdjectiveObjects[(Get-Random -Minimum 0 -Maximum ($RockAdjectiveObjects.Count))].Word
 
                 $2 = ''
-                $2 = $RockAgents[(Get-Random -Minimum 0 -Maximum ($RockAgents.Count))]
+                $2 = $RockAgentObjects[(Get-Random -Minimum 0 -Maximum ($RockAgentObjects.Count))].Word
         
             }elseif($Roll -eq 2){
     
                 $1 =''
-                $1 = $RockNouns[(Get-Random -Minimum 0 -Maximum ($RockNouns.Count))]
+                $1 = $RockNounObjects[(Get-Random -Minimum 0 -Maximum ($RockNounObjects.Count))].Word
 
                 $2 = ''
-                $2 = $RockAgents[(Get-Random -Minimum 0 -Maximum ($RockAgents.Count))]
+                $2 = $RockAgentObjects[(Get-Random -Minimum 0 -Maximum ($RockAgentObjects.Count))].Word
 
-                if($1 -eq $2.Substring(0,$2.Length - 2)){$1 = $RockAdjectives[(Get-Random -Minimum 0 -Maximum ($RockAdjectives.Count))]}
+                if($1 -eq $2.Substring(0,$2.Length - 2)){$1 = $RockAdjectiveObjects[(Get-Random -Minimum 0 -Maximum ($RockAdjectiveObjects.Count))].Word}
 
             }elseif($Roll -eq 3){
     
                 $1 =''
-                $1 = $RockAdjectives[(Get-Random -Minimum 0 -Maximum ($RockAdjectives.Count))]
+                $1 = $RockAdjectiveObjects[(Get-Random -Minimum 0 -Maximum ($RockAdjectiveObjects.Count))].Word
 
                 $2 = ''
-                $2 = $RockNouns[(Get-Random -Minimum 0 -Maximum ($RockNouns.Count))]
+                $2 = $RockNounObjects[(Get-Random -Minimum 0 -Maximum ($RockNounObjects.Count))].Word
 
-                if($1 -eq $2){$2 = $RockAgents[(Get-Random -Minimum 0 -Maximum ($RockAgents.Count))]}
+                if($1 -eq $2){$2 = $RockAgentObjects[(Get-Random -Minimum 0 -Maximum ($RockAgentObjects.Count))].Word}
 
             #Additional logic needed to make satisfying combinations of random nouns
             }elseif($Roll -eq 4){
     
                 $1 =''
-                $1 = $RockNouns[(Get-Random -Minimum 0 -Maximum ($RockNouns.Count))]
+                $1 = $RockNounObjects[(Get-Random -Minimum 0 -Maximum ($RockNounObjects.Count))].Word
 
                 $2 = ''
-                $2 = $RockNouns[(Get-Random -Minimum 0 -Maximum ($RockNouns.Count))]
+                $2 = $RockNounObjects[(Get-Random -Minimum 0 -Maximum ($RockNounObjects.Count))].Word
 
-                if($1 -eq $2){$2 = $RockAgents[(Get-Random -Minimum 0 -Maximum ($RockAgents.Count))]}
+                if($1 -eq $2){$2 = $RockAgentObjects[(Get-Random -Minimum 0 -Maximum ($RockAgentObjects.Count))].Word}
 
             }
 
@@ -4261,47 +4384,87 @@ function Get-GnomeSurname {
 
             }
 
-        }else{
+        }
+        
+        if($Mode -eq 'Rhyming'){
+        
+            if($Roll -eq 1){
+
+                $1 = 'Adjective'
+
+                $2 = 'Agent'
+
+            }
+
+            if($Roll -eq 2){
+
+                $1 = 'Noun'
+
+                $2 = 'Agent'
+
+            }
+
+            if($Roll -eq 3){
+
+                $1 = 'Adjective'
+
+                $2 = 'Noun'
+
+            }
+
+            $Surname = Get-RhymingDynamic -GnomeType Forest -Set1 $1 -Set2 $2
+
+        }
+
+        if($Mode -eq 'Random'){
 
            if($Roll -eq 1){
     
+                $Error.Clear()
+
                 $1 =''
-                $1 = $ForestAdjectives[(Get-Random -Minimum 0 -Maximum ($ForestAdjectives.Count))]
+                $1 = $ForestAdjectiveObjects[(Get-Random -Minimum 0 -Maximum ($ForestAdjectiveObjects.Count))].Word
 
                 $2 = ''
-                $2 = $ForestAgents[(Get-Random -Minimum 0 -Maximum ($ForestAgents.Count))]
+                $2 = $ForestAgentObjects[(Get-Random -Minimum 0 -Maximum ($ForestAgentObjects.Count))].Word
 
             }elseif($Roll -eq 2){
     
+                $Error.Clear()
+
                 $1 =''
-                $1 = $ForestNouns[(Get-Random -Minimum 0 -Maximum ($ForestNouns.Count))]
+                $1 = $ForestNounObjects[(Get-Random -Minimum 0 -Maximum ($ForestNounObjects.Count))].Word
 
                 $2 = ''
-                $2 = $ForestAgents[(Get-Random -Minimum 0 -Maximum ($ForestAgents.Count))]
+                $2 = $ForestAgentObjects[(Get-Random -Minimum 0 -Maximum ($ForestAgentObjects.Count))].Word
 
-                if($1 -eq $2.Substring(0,$2.Length - 2)){$1 = $ForestAdjectives[(Get-Random -Minimum 0 -Maximum ($ForestAdjectives.Count))]}
+                if($1 -eq $2.Substring(0,$2.Length - 2)){$1 = $ForestAdjectiveObjects[(Get-Random -Minimum 0 -Maximum ($ForestAdjectiveObjects.Count))].Word}
 
             #Additional logic needed to make satisfying combinations of random nouns
             }elseif($Roll -eq 3){
+
+                $Error.Clear()
     
                 $1 =''
-                $1 = $ForestAdjectives[(Get-Random -Minimum 0 -Maximum ($ForestAdjectives.Count))]
+                $1 = $ForestAdjectiveObjects[(Get-Random -Minimum 0 -Maximum ($ForestAdjectiveObjects.Count))].Word
 
                 $2 = ''
-                $2 = $ForestNouns[(Get-Random -Minimum 0 -Maximum ($ForestNouns.Count))]
+                $2 = $ForestNounObjects[(Get-Random -Minimum 0 -Maximum ($ForestNounObjects.Count))].Word
 
-                if($1 -eq $2){$2 = $ForestAgents[(Get-Random -Minimum 0 -Maximum ($ForestAgents.Count))]}
+                if($1 -eq $2){$2 = $ForestAgentObjects[(Get-Random -Minimum 0 -Maximum ($ForestAgentObjects.Count))].Word}
 
             #Additional logic needed to make satisfying combinations of random nouns
             }elseif($Roll -eq 4){
     
+                $Error.Clear()
+
                 $1 =''
-                $1 = $ForestNouns[(Get-Random -Minimum 0 -Maximum ($ForestNouns.Count))]
+                $1 = $ForestNounObjects[(Get-Random -Minimum 0 -Maximum ($ForestNounObjects.Count))].Word
 
                 $2 = ''
-                $2 = $ForestNouns[(Get-Random -Minimum 0 -Maximum ($ForestNouns.Count))]
+                $2 = $ForestNounObjects[(Get-Random -Minimum 0 -Maximum ($ForestNounObjects.Count))].Word
 
-                if($1 -eq $2){$2 = $ForestAgents[(Get-Random -Minimum 0 -Maximum ($ForestAgents.Count))]}
+                if($1 -eq $2){$2 = $ForestAgentObjects[(Get-Random -Minimum 0 -Maximum ($ForestAgentObjects.Count))].Word}
 
             }
 
@@ -4325,7 +4488,5 @@ function Get-GnomeSurname {
 
 }
 
-#Add rhyming mode
-#Rewrite original code to reflect new object arrays
 #Incorporate sub-arrays as tags on new arrays
 #Add "cks" --> "x", "s" --> "z" switch?
