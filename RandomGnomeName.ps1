@@ -4488,5 +4488,6 @@ function Get-GnomeSurname {
 
 }
 
-#Incorporate sub-arrays as tags on new arrays
-#Add "cks" --> "x", "s" --> "z" switch?
+#Remove matching on two IPA characters as valid rhymes, (avoiding strange vowel sounds being matched as with "Canenoggin," which matches on "ɪn" ("keɪn" and "ˈnɑɡɪn")
+#Add additional elements for objects: tags, (friends, animals, plants, etc.) logical prefixes/suffixes
+#Add "cks" --> "x", "s" --> "z" switch for rock gnomes?
