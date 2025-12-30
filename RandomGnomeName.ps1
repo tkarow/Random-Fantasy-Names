@@ -4246,29 +4246,29 @@ function Get-GnomeSurname {
         
             if($Roll -eq 1){
 
-                $1 = 'Adjective'
+                $Set1 = 'Adjective'
 
-                $2 = 'Agent'
+                $Set2 = 'Agent'
 
             }
 
             if($Roll -eq 2){
 
-                $1 = 'Noun'
+                $Set1 = 'Noun'
 
-                $2 = 'Agent'
+                $Set2 = 'Agent'
 
             }
 
             if($Roll -eq 3){
 
-                $1 = 'Adjective'
+                $Set1 = 'Adjective'
 
-                $2 = 'Noun'
+                $Set2 = 'Noun'
 
             }
 
-            $Surname = Get-RhymingDynamic -GnomeType Rock -Set1 $1 -Set2 $2
+            $Surname = Get-RhymingDynamic -GnomeType Rock -Set1 $Set1 -Set2 $Set2
 
         }
 
@@ -4390,29 +4390,29 @@ function Get-GnomeSurname {
         
             if($Roll -eq 1){
 
-                $1 = 'Adjective'
+                $Set1 = 'Adjective'
 
-                $2 = 'Agent'
+                $Set2 = 'Agent'
 
             }
 
             if($Roll -eq 2){
 
-                $1 = 'Noun'
+                $Set1 = 'Noun'
 
-                $2 = 'Agent'
+                $Set2 = 'Agent'
 
             }
 
             if($Roll -eq 3){
 
-                $1 = 'Adjective'
+                $Set1 = 'Adjective'
 
-                $2 = 'Noun'
+                $Set2 = 'Noun'
 
             }
 
-            $Surname = Get-RhymingDynamic -GnomeType Forest -Set1 $1 -Set2 $2
+            $Surname = Get-RhymingDynamic -GnomeType Forest -Set1 $Set1 -Set2 $Set2
 
         }
 
@@ -4474,13 +4474,13 @@ function Get-GnomeSurname {
 
     }
 
-    if($1[-1] -eq $2[0]){$Surname = "$($1)-$($2)"}else{$Surname = "$($1)$($2)"}
+    if($Mode -ne 'Rhyming'){
 
-    if(($1[-1] -eq "t") -and ($2[0] -eq "h")){$Surname = "$($1)-$($2)"}
+        if($1[-1] -eq $2[0]){$Surname = "$($1)-$($2)"}else{$Surname = "$($1)$($2)"}
 
-    $Surname = $Surname.Replace("þ","th")
-    $Surname = $Surname.Replace("ʃ","sh")
-    $Surname = $Surname.Replace("ċ","ch")
+        if(($1[-1] -eq "t") -and ($2[0] -eq "h")){$Surname = "$($1)-$($2)"}
+
+    }
 
     $Surname = "$($Surname.Substring(0,1).ToUpper())"+"$($Surname.Substring(1))"
 
