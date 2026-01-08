@@ -4381,3 +4381,9 @@ function Get-GnomeSurname {
 #Add additional elements for objects: tags, (friends, animals, plants, etc.) logical prefixes/suffixes
 #Add "cks" --> "x", "s" --> "z" switch for rock gnomes?
 #Add IPA values for "tricksy" and "twitchy"
+
+
+##Fritter
+##Bread
+##Nugget
+##Harp
