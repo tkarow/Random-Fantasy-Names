@@ -62,6 +62,8 @@ function Get-GnomeName {
 
     $Name = "$($NamePrefix)$($Root)$($NameSuffix)".ToLower()
 
+    if($Name -like "*itchker*"){$Name = $Name.replace('itchker','itcher')}
+
     $Name = $Name.replace('aa','a')
     $Name = $Name.replace('ai','i')
     $Name = $Name.replace('ee','-e')
@@ -111,7 +113,6 @@ function Get-GnomeName {
     $Name = $Name.replace('yi','y-i')
 
     if($Name -like "*eumpkin*"){$Name = $Name.replace('eumpkin','e-umpkin')}
-    if($Name -like "*itchker*"){$Name = $Name.replace('itchker','itcher')}
 
     if($Name -like "*kock*"){
     
@@ -2961,6 +2962,10 @@ $ForestAgentObjects = @(
 			Word=“gum";
 			IPA="ɡʌm"
 		},
+        [pscustomobject]@{
+			Word=“harp";
+			IPA=""
+		},
 		[pscustomobject]@{
 			Word=“heimer";
 			IPA="ˈhaɪmər"
@@ -3326,6 +3331,10 @@ $ForestAgentObjects = @(
 
 $ForestAdjectiveObjects = @(
 
+        [pscustomobject]@{
+			Word=“bread";
+			IPA=""
+		},
     	[pscustomobject]@{
 			Word=“bright";
 			IPA="braɪt"
@@ -3399,6 +3408,10 @@ $ForestAdjectiveObjects = @(
 			IPA="feɪ"
 		},
 		[pscustomobject]@{
+			Word=“fritter";
+			IPA="ˈ"
+		},
+        [pscustomobject]@{
 			Word=“frolic";
 			IPA="ˈfrɑlɪk"
 		},
@@ -3489,6 +3502,10 @@ $ForestAdjectiveObjects = @(
 		[pscustomobject]@{
 			Word=“naughty";
 			IPA="ˈnɔti"
+		},
+        [pscustomobject]@{
+			Word=“nugget";
+			IPA=""
 		},
 		[pscustomobject]@{
 			Word=“nutty";
@@ -3713,7 +3730,7 @@ $ForestFriends += $ForestAnimalFriends
 $ForestFriends += $ForestPlantFriends
 
 #region The following arrays may be implemented in the future. Unsure.
-$ForestFoods = @("apple","bean","beet","berry","bug","bun","biscuit","butter","cake","candy","cherry","chive","cream","dill","dumpling","egg","fig","fruit","fungus","garlic","ginger","grub","gum","hazel","hemlock","honey","jam","jelly","leek","maple","melon","mint","muffin","mushroom","nettle","nut","onion","parsley","parsnip","pea","peach","pepper","plum","pumpkin","root","sap","seed","shroom","spice","spud","sugar","syrup","tea","tater","truffle","turnip","waffle","water","wort")
+$ForestFoods = @("apple","bean","beet","berry","bread","bug","bun","biscuit","butter","cake","candy","cherry","chive","cream","dill","dumpling","egg","fig","fritter","fruit","fungus","garlic","ginger","grub","gum","hazel","hemlock","honey","jam","jelly","leek","maple","melon","mint","muffin","mushroom","nettle","nugget","nut","onion","parsley","parsnip","pea","peach","pepper","plum","pumpkin","root","sap","seed","shroom","spice","spud","sugar","syrup","tea","tater","truffle","turnip","waffle","water","wort")
 $ForestLocales = @()
 $ForestFluids = @("cider","dew","honey","juice","milk","nectar","pond","puddle","sap","soup","stew","tea","tonic","water")
 #endregion
@@ -4380,10 +4397,4 @@ function Get-GnomeSurname {
 
 #Add additional elements for objects: tags, (friends, animals, plants, etc.) logical prefixes/suffixes
 #Add "cks" --> "x", "s" --> "z" switch for rock gnomes?
-#Add IPA values for "tricksy" and "twitchy"
-
-
-##Fritter
-##Bread
-##Nugget
-##Harp
+#Add IPA values for "tricksy", "twitchy", "fritter", "bread", "nugget", and "harp"
