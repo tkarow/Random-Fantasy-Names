@@ -261,6 +261,10 @@ $RockNounObjects = @(
 			IPA="bɛnʧ"
 		},
 		[pscustomobject]@{
+			Word=“boggle";
+			IPA="bɒɡəl"
+		},
+		[pscustomobject]@{
 			Word=“book";
 			IPA="bʊk"
 		},
@@ -429,6 +433,10 @@ $RockNounObjects = @(
 			IPA="flʌks"
 		},
 		[pscustomobject]@{
+			Word=“fret";
+			IPA="frɛt"
+		},
+		[pscustomobject]@{
 			Word=“fumble";
 			IPA="ˈfʌmbəl"
 		},
@@ -487,6 +495,10 @@ $RockNounObjects = @(
 		[pscustomobject]@{
 			Word=“hammer";
 			IPA="ˈhæmər"
+		},
+		[pscustomobject]@{
+			Word=“hassle";
+			IPA="hæsəl"
 		},
 		[pscustomobject]@{
 			Word=“hatch";
@@ -621,12 +633,12 @@ $RockNounObjects = @(
 			IPA="paɪp"
 		},
 		[pscustomobject]@{
-			Word=“plan";
-			IPA="plæn"
+			Word=“piffle";
+			IPA="pɪfəl"
 		},
 		[pscustomobject]@{
-			Word=“pocket";
-			IPA="ˈpɑkət"
+			Word=“plan";
+			IPA="plæn"
 		},
 		[pscustomobject]@{
 			Word=“print";
@@ -643,6 +655,14 @@ $RockNounObjects = @(
 		[pscustomobject]@{
 			Word=“quartz";
 			IPA="kwɔrts"
+		},
+		[pscustomobject]@{
+			Word=“quarrel";
+			IPA="kwɒrəl"
+		},
+		[pscustomobject]@{
+			Word=“quibble";
+			IPA="kwɪbəl"
 		},
 		[pscustomobject]@{
 			Word=“quill";
@@ -685,6 +705,10 @@ $RockNounObjects = @(
 			IPA="rʌmp"
 		},
 		[pscustomobject]@{
+			Word=“rumpus";
+			IPA="rʌmpəs"
+		},
+		[pscustomobject]@{
 			Word=“rust";
 			IPA="rʌst"
 		},
@@ -707,6 +731,10 @@ $RockNounObjects = @(
 		[pscustomobject]@{
 			Word=“school";
 			IPA="skul"
+		},
+		[pscustomobject]@{
+			Word=“scrap";
+			IPA="skræp"
 		},
 		[pscustomobject]@{
 			Word=“screw";
@@ -741,6 +769,10 @@ $RockNounObjects = @(
 			IPA="ʃɹuːm"
 		},
 		[pscustomobject]@{
+			Word=“slag";
+			IPA="slæɡ"
+		},
+		[pscustomobject]@{
 			Word=“slot";
 			IPA="slɑt"
 		},
@@ -765,8 +797,16 @@ $RockNounObjects = @(
 			IPA="sup"
 		},
 		[pscustomobject]@{
+			Word=“spat";
+			IPA="spæt"
+		},
+		[pscustomobject]@{
 			Word=“spell";
 			IPA="spɛl"
+		},
+		[pscustomobject]@{
+			Word=“splore";
+			IPA="splɔr"
 		},
 		[pscustomobject]@{
 			Word=“spring";
@@ -783,6 +823,10 @@ $RockNounObjects = @(
 		[pscustomobject]@{
 			Word=“sprocket";
 			IPA="ˈsprɑkət"
+		},
+		[pscustomobject]@{
+			Word=“squabble";
+			IPA="skwɑbəl"
 		},
 		[pscustomobject]@{
 			Word=“stamp";
@@ -837,8 +881,16 @@ $RockNounObjects = @(
 			IPA="θʌm"
 		},
 		[pscustomobject]@{
+			Word=“tiff";
+			IPA="tɪf"
+		},
+		[pscustomobject]@{
 			Word=“time";
 			IPA="taɪm"
+		},
+		[pscustomobject]@{
+			Word=“tizzy";
+			IPA="tɪzi"
 		},
 		[pscustomobject]@{
 			Word=“toe";
@@ -859,6 +911,10 @@ $RockNounObjects = @(
 		[pscustomobject]@{
 			Word=“tool";
 			IPA="tul"
+		},
+		[pscustomobject]@{
+			Word=“tot";
+			IPA="tɑt"
 		},
 		[pscustomobject]@{
 			Word=“toy";
@@ -945,6 +1001,10 @@ $RockAgentObjects = @(
 			IPA="ˈbɜrɡər"
 		},
 		[pscustomobject]@{
+			Word=“bicker";
+			IPA="bɪkər"
+		},
+		[pscustomobject]@{
 			Word=“binder";
 			IPA="ˈbaɪndər"
 		},
@@ -955,6 +1015,10 @@ $RockAgentObjects = @(
 		[pscustomobject]@{
 			Word=“bits";
 			IPA="bɪts"
+		},
+		[pscustomobject]@{
+			Word=“blather";
+			IPA="blæθər"
 		},
 		[pscustomobject]@{
 			Word=“breaker";
@@ -977,16 +1041,20 @@ $RockAgentObjects = @(
 			IPA="ˈbɪldər"
 		},
 		[pscustomobject]@{
+			Word=“bustle";
+			IPA="bʌsəl"
+		},
+		[pscustomobject]@{
 			Word=“caster";
 			IPA="ˈkæstər"
 		},
 		[pscustomobject]@{
 			Word=“catcher";
-			IPA="ˈkæʧər"
+			IPA="kæʧər"
 		},
 		[pscustomobject]@{
 			Word=“checker";
-			IPA="ˈʧɛkər"
+			IPA="ʧɛkər"
 		},
 		[pscustomobject]@{
 			Word=“chiller";
@@ -1006,7 +1074,11 @@ $RockAgentObjects = @(
 		},
 		[pscustomobject]@{
 			Word=“clunker";
-			IPA="ˈklʌŋkər"
+			IPA="klʌŋkər"
+		},
+		[pscustomobject]@{
+			Word=“clutter";
+			IPA="klʌtər"
 		},
 		[pscustomobject]@{
 			Word=“cotter";
@@ -1221,10 +1293,6 @@ $RockAgentObjects = @(
 			IPA="ˈpʌfər"
 		},
 		[pscustomobject]@{
-			Word=“pocket";
-			IPA="ˈpɑkət"
-		},
-		[pscustomobject]@{
 			Word=“polish";
 			IPA="ˈpɑlɪʃ"
 		},
@@ -1429,6 +1497,10 @@ $RockAgentObjects = @(
 			IPA="ˈwɑʧər"
 		},
 		[pscustomobject]@{
+			Word=“welter";
+			IPA="wɛltər"
+		},
+		[pscustomobject]@{
 			Word=“winder";
 			IPA="ˈwaɪndər"
 		},
@@ -1450,6 +1522,10 @@ $RockAdjectiveObjects = @(
     	[pscustomobject]@{
 			Word=“best";
 			IPA="bɛst"
+		},
+		[pscustomobject]@{
+			Word=“boggle";
+			IPA="bɒɡəl"
 		},
 		[pscustomobject]@{
 			Word=“brass";
@@ -1508,6 +1584,10 @@ $RockAdjectiveObjects = @(
 			IPA="dip"
 		},
 		[pscustomobject]@{
+			Word=“dither";
+			IPA="dɪθər"
+		},
+		[pscustomobject]@{
 			Word=“dizzy";
 			IPA="ˈdɪzi"
 		},
@@ -1544,6 +1624,10 @@ $RockAdjectiveObjects = @(
 			IPA="ˈfʌni"
 		},
 		[pscustomobject]@{
+			Word=“fussy";
+			IPA="fʌsi"
+		},
+		[pscustomobject]@{
 			Word=“gem";
 			IPA="ʤɛm"
 		},
@@ -1570,6 +1654,10 @@ $RockAdjectiveObjects = @(
 		[pscustomobject]@{
 			Word=“high";
 			IPA="haɪ"
+		},
+		[pscustomobject]@{
+			Word=“hurry";
+			IPA="hɜri"
 		},
 		[pscustomobject]@{
 			Word=“inky";
@@ -1630,10 +1718,6 @@ $RockAdjectiveObjects = @(
 		[pscustomobject]@{
 			Word=“over";
 			IPA="ˈoʊvər"
-		},
-		[pscustomobject]@{
-			Word=“pocket";
-			IPA="ˈpɑkət"
 		},
 		[pscustomobject]@{
 			Word=“power";
@@ -1708,6 +1792,10 @@ $RockAdjectiveObjects = @(
 			IPA="ˈtaɪni"
 		},
 		[pscustomobject]@{
+			Word=“tizzy";
+			IPA="tɪzi"
+		},
+		[pscustomobject]@{
 			Word=“top";
 			IPA="tɑp"
 		},
@@ -1720,16 +1808,20 @@ $RockAdjectiveObjects = @(
 			IPA="tɹɪksi"
 		},
 		[pscustomobject]@{
+			Word=“tubby";
+			IPA="tʌbi"
+		},
+		[pscustomobject]@{
+			Word=“twinkle";
+			IPA="ˈtwɪŋkəl"
+		},
+		[pscustomobject]@{
 			Word=“twitchy";
 			IPA="ˈtwɪt͡ʃi"
 		},
 		[pscustomobject]@{
 			Word=“under";
 			IPA="ˈʌndər"
-		},
-		[pscustomobject]@{
-			Word=“twinkle";
-			IPA="ˈtwɪŋkəl"
 		},
 		[pscustomobject]@{
 			Word=“warm";
@@ -1936,6 +2028,10 @@ $ForestNounObjects =  @(
 		[pscustomobject]@{
 			Word=“breeze";
 			IPA="briz"
+		},
+		[pscustomobject]@{
+			Word=“brook";
+			IPA="brʊk"
 		},
 		[pscustomobject]@{
 			Word=“bubble";
@@ -2458,10 +2554,6 @@ $ForestNounObjects =  @(
 			IPA="plʌm"
 		},
 		[pscustomobject]@{
-			Word=“pocket";
-			IPA="ˈpɑkət"
-		},
-		[pscustomobject]@{
 			Word=“pond";
 			IPA="pɑnd"
 		},
@@ -2548,6 +2640,10 @@ $ForestNounObjects =  @(
 		[pscustomobject]@{
 			Word=“sky";
 			IPA="skaɪ"
+		},
+		[pscustomobject]@{
+			Word=“sleeves";
+			IPA="slivz"
 		},
 		[pscustomobject]@{
 			Word=“slug";
@@ -2692,6 +2788,10 @@ $ForestNounObjects =  @(
 		[pscustomobject]@{
 			Word=“tonic";
 			IPA="ˈtɑnɪk"
+		},
+		[pscustomobject]@{
+			Word=“tot";
+			IPA="tɑt"
 		},
 		[pscustomobject]@{
 			Word=“truffle";
@@ -2935,6 +3035,10 @@ $ForestAgentObjects = @(
 			IPA="ˈflaʊər"
 		},
 		[pscustomobject]@{
+			Word=“flutter";
+			IPA="flʌtər"
+		},
+		[pscustomobject]@{
 			Word=“friend";
 			IPA="frɛnd"
 		},
@@ -2964,7 +3068,7 @@ $ForestAgentObjects = @(
 		},
         [pscustomobject]@{
 			Word=“harp";
-			IPA=""
+			IPA="hɑrp"
 		},
 		[pscustomobject]@{
 			Word=“heimer";
@@ -3151,6 +3255,10 @@ $ForestAgentObjects = @(
 			IPA="rʌmp"
 		},
 		[pscustomobject]@{
+			Word=“rumpus";
+			IPA="rʌmpəs"
+		},
+		[pscustomobject]@{
 			Word=“sage";
 			IPA="seɪʤ"
 		},
@@ -3259,6 +3367,10 @@ $ForestAgentObjects = @(
 			IPA="ˈtɪŋkər"
 		},
 		[pscustomobject]@{
+			Word=“toaster";
+			IPA="toʊstər"
+		},
+		[pscustomobject]@{
 			Word=“toker";
 			IPA="təʊkɚ"
 		},
@@ -3333,7 +3445,7 @@ $ForestAdjectiveObjects = @(
 
         [pscustomobject]@{
 			Word=“bread";
-			IPA=""
+			IPA="brɛd"
 		},
     	[pscustomobject]@{
 			Word=“bright";
@@ -3409,7 +3521,7 @@ $ForestAdjectiveObjects = @(
 		},
 		[pscustomobject]@{
 			Word=“fritter";
-			IPA="ˈ"
+			IPA="frɪtər"
 		},
         [pscustomobject]@{
 			Word=“frolic";
@@ -3418,6 +3530,10 @@ $ForestAdjectiveObjects = @(
 		[pscustomobject]@{
 			Word=“funny";
 			IPA="ˈfʌni"
+		},
+		[pscustomobject]@{
+			Word=“fussy";
+			IPA="fʌsi"
 		},
 		[pscustomobject]@{
 			Word=“glad";
@@ -3505,7 +3621,7 @@ $ForestAdjectiveObjects = @(
 		},
         [pscustomobject]@{
 			Word=“nugget";
-			IPA=""
+			IPA="nʌɡɪt"
 		},
 		[pscustomobject]@{
 			Word=“nutty";
@@ -3522,10 +3638,6 @@ $ForestAdjectiveObjects = @(
 		[pscustomobject]@{
 			Word=“over";
 			IPA="ˈoʊvər"
-		},
-		[pscustomobject]@{
-			Word=“pocket";
-			IPA="ˈpɑkət"
 		},
 		[pscustomobject]@{
 			Word=“puff";
@@ -3597,11 +3709,15 @@ $ForestAdjectiveObjects = @(
 		},
 		[pscustomobject]@{
 			Word=“tricksy";
-			IPA=""
+			IPA="trɪksi"
+		},
+		[pscustomobject]@{
+			Word=“tubby";
+			IPA="tʌbi"
 		},
 		[pscustomobject]@{
 			Word=“twitchy";
-			IPA=""
+			IPA="twɪʧi"
 		},
 		[pscustomobject]@{
 			Word=“twinkle";
@@ -4056,6 +4172,7 @@ function Get-RhymingDynamic {
             $Surname = ''
             if($NameConstructor1.Word[-1] -eq $NameConstructor2.Word[0]){$Surname = "$($NameConstructor1.Word)-$($NameConstructor2.Word)"}else{$Surname = "$($NameConstructor1.Word)$($NameConstructor2.Word)"}
             if(($NameConstructor1.Word[-1] -eq "t") -and ($NameConstructor2.Word[0] -eq "h")){$Surname = "$($NameConstructor1.Word)-$($NameConstructor2.Word)"}
+            if(($NameConstructor1.Word[-1] -eq "e") -and ($NameConstructor2.Word[0] -eq "a")){$Surname = "$($NameConstructor1.Word)-$($NameConstructor2.Word)"}
 
             $Surname = "$($Surname.Substring(0,1).ToUpper())"+"$($Surname.Substring(1))"
 
@@ -4387,9 +4504,13 @@ function Get-GnomeSurname {
 
         if(($1[-1] -eq "t") -and ($2[0] -eq "h")){$Surname = "$($1)-$($2)"}
 
+        if(($1[-1] -eq "e") -and ($2[0] -eq "a")){$Surname = "$($1)-$($2)"}
+
     }
 
     $Surname = "$($Surname.Substring(0,1).ToUpper())"+"$($Surname.Substring(1))"
+
+    if($Surname -like "*scrap"){$Surname = $Surname.replace('scrap','-scrap')}
 
     $Surname
 
@@ -4397,4 +4518,3 @@ function Get-GnomeSurname {
 
 #Add additional elements for objects: tags, (friends, animals, plants, etc.) logical prefixes/suffixes
 #Add "cks" --> "x", "s" --> "z" switch for rock gnomes?
-#Add IPA values for "tricksy", "twitchy", "fritter", "bread", "nugget", and "harp"
