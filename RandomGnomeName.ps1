@@ -987,6 +987,7 @@ $RockNounObjects = @(
 
     )
 
+#"Agents" as I have categorized them, are actors or words that sound like them, (i.e. they usually end in "er"). This is mostly for word order in the surname as I have ordered their construction, but really is a result of my aesthetic opinions.
 $RockAgentObjects = @(
     	[pscustomobject]@{
 			Word=“belly";
