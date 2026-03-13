@@ -2,7 +2,7 @@
 #https://pase.ac.uk/domesday/export/csv/domesday/
 #I calculated, then rounded percentages, then flattened the math, and did some light curation. Sue me.
 
-#Dachelin
+#
 
 $HumanNames = @(
 
@@ -10934,7 +10934,9 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
@@ -10944,7 +10946,9 @@ $HumanNames = @(
 
 		Weight = .0049;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
@@ -10954,7 +10958,9 @@ $HumanNames = @(
 
 		Weight = .003;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
@@ -10964,7 +10970,9 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
@@ -10974,7 +10982,9 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
@@ -10984,7 +10994,9 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
@@ -10994,7 +11006,9 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
@@ -11004,7 +11018,9 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
@@ -11014,7 +11030,9 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
@@ -11024,7 +11042,9 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
@@ -11034,7 +11054,9 @@ $HumanNames = @(
 
 		Weight = .0039;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
@@ -11044,7 +11066,9 @@ $HumanNames = @(
 
 		Weight = .0039;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
@@ -11054,7 +11078,9 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
@@ -11064,7 +11090,9 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
@@ -11074,7 +11102,9 @@ $HumanNames = @(
 
 		Weight = .002;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
@@ -11084,7 +11114,9 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
@@ -11094,7 +11126,9 @@ $HumanNames = @(
 
 		Weight = .0167;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
@@ -11104,7 +11138,9 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
@@ -11114,7 +11150,9 @@ $HumanNames = @(
 
 		Weight = .002;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
@@ -11124,7 +11162,9 @@ $HumanNames = @(
 
 		Weight = .003;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
@@ -11134,7 +11174,9 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
