@@ -6300,7 +6300,7 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Female"	},
 
 	[pscustomobject]@{
 
@@ -6340,7 +6340,7 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Female"	},
 
 	[pscustomobject]@{
 
@@ -6700,7 +6700,9 @@ $HumanNames = @(
 
 		Weight = .0039;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
@@ -6710,7 +6712,9 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Female"
+
+    },
 
 	[pscustomobject]@{
 
@@ -6720,7 +6724,9 @@ $HumanNames = @(
 
 		Weight = .0039;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
@@ -6740,7 +6746,7 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Female"	},
 
 	[pscustomobject]@{
 
@@ -6940,7 +6946,9 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
@@ -6950,7 +6958,9 @@ $HumanNames = @(
 
 		Weight = .0049;
 
-		Gender = "Male"	},
+		Gender = "Female"
+    
+    },
 
 	[pscustomobject]@{
 
@@ -7490,7 +7500,9 @@ $HumanNames = @(
 
 		Weight = .0226;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
@@ -7500,7 +7512,9 @@ $HumanNames = @(
 
 		Weight = .0433;
 
-		Gender = "Male"	},
+		Gender = "Female"
+
+    },
 
 	[pscustomobject]@{
 
@@ -7510,7 +7524,9 @@ $HumanNames = @(
 
 		Weight = .0049;
 
-		Gender = "Male"	},
+		Gender = "Female"
+
+    },
 
 	[pscustomobject]@{
 
@@ -7540,7 +7556,9 @@ $HumanNames = @(
 
 		Weight = .0079;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
@@ -7550,7 +7568,9 @@ $HumanNames = @(
 
 		Weight = .0059;
 
-		Gender = "Male"	},
+		Gender = "Female"
+
+    },
 
 	[pscustomobject]@{
 
@@ -7580,7 +7600,7 @@ $HumanNames = @(
 
 		Weight = .003;
 
-		Gender = "Male"	},
+		Gender = "Female"	},
 
 	[pscustomobject]@{
 
@@ -7600,7 +7620,9 @@ $HumanNames = @(
 
 		Weight = .0079;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
@@ -7610,7 +7632,9 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Female"
+
+    },
 
 	[pscustomobject]@{
 
@@ -7770,7 +7794,9 @@ $HumanNames = @(
 
 		Weight = .002;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
@@ -7780,7 +7806,9 @@ $HumanNames = @(
 
 		Weight = .0079;
 
-		Gender = "Male"	},
+		Gender = "Female"
+
+    },
 
 	[pscustomobject]@{
 
@@ -7790,7 +7818,9 @@ $HumanNames = @(
 
 		Weight = .002;
 
-		Gender = "Male"	},
+		Gender = "Female"
+
+    },
 
 	[pscustomobject]@{
 
@@ -7800,7 +7830,9 @@ $HumanNames = @(
 
 		Weight = .003;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
@@ -7810,7 +7842,9 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
@@ -7820,7 +7854,9 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Female"
+
+    },
 
 	[pscustomobject]@{
 
@@ -7868,9 +7904,23 @@ $HumanNames = @(
 
 		Source = "Domesday 1086";
 
-		Weight = .002;
+		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Female"
+    
+    },
+
+	[pscustomobject]@{
+
+		Name = "Atthelrun";
+
+		Source = "Domesday 1086";
+
+		Weight = .001;
+
+		Gender = "Female"
+    
+    },
 
 	[pscustomobject]@{
 
@@ -8220,7 +8270,9 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
@@ -8230,7 +8282,9 @@ $HumanNames = @(
 
 		Weight = .002;
 
-		Gender = "Male"	},
+		Gender = "Female"
+
+    },
 
 	[pscustomobject]@{
 
@@ -8290,7 +8344,9 @@ $HumanNames = @(
 
 		Weight = .0256;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
@@ -8300,7 +8356,9 @@ $HumanNames = @(
 
 		Weight = .0108;
 
-		Gender = "Male"	},
+		Gender = "Female"
+
+    },
 
 	[pscustomobject]@{
 
@@ -8310,7 +8368,7 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Female"	},
 
 	[pscustomobject]@{
 
@@ -9590,7 +9648,7 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Female"	},
 
 	[pscustomobject]@{
 
@@ -9960,7 +10018,9 @@ $HumanNames = @(
 
 		Weight = .003;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
@@ -9970,7 +10030,9 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Female"
+
+    },
 
 	[pscustomobject]@{
 
@@ -9980,7 +10042,9 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Female"
+
+    },
 
 	[pscustomobject]@{
 
@@ -10010,7 +10074,9 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
@@ -10020,7 +10086,9 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Female"
+
+    },
 
 	[pscustomobject]@{
 
@@ -10030,7 +10098,9 @@ $HumanNames = @(
 
 		Weight = .0059;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
@@ -10560,7 +10630,7 @@ $HumanNames = @(
 
 		Weight = .0256;
 
-		Gender = "Male"	},
+		Gender = "Female"	},
 
 	[pscustomobject]@{
 
@@ -10570,7 +10640,7 @@ $HumanNames = @(
 
 		Weight = .0217;
 
-		Gender = "Male"	},
+		Gender = "Female"	},
 
 	[pscustomobject]@{
 
@@ -10710,7 +10780,9 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
@@ -10720,7 +10792,9 @@ $HumanNames = @(
 
 		Weight = .003;
 
-		Gender = "Male"	},
+		Gender = "Female"
+
+    },
 
 	[pscustomobject]@{
 
@@ -10730,7 +10804,9 @@ $HumanNames = @(
 
 		Weight = .0108;
 
-		Gender = "Male"	},
+		Gender = "Female"
+
+    },
 
 	[pscustomobject]@{
 
@@ -10740,7 +10816,9 @@ $HumanNames = @(
 
 		Weight = .002;
 
-		Gender = "Male"	},
+		Gender = "Female"
+
+    },
 
 	[pscustomobject]@{
 
@@ -11460,7 +11538,9 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
@@ -11470,7 +11550,9 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Female"
+
+    },
 
 	[pscustomobject]@{
 
@@ -11480,7 +11562,9 @@ $HumanNames = @(
 
 		Weight = .0049;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
@@ -12480,7 +12564,9 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
@@ -12490,7 +12576,9 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Female"
+
+    },
 
 	[pscustomobject]@{
 
@@ -12500,7 +12588,9 @@ $HumanNames = @(
 
 		Weight = .0689;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
@@ -12730,7 +12820,9 @@ $HumanNames = @(
 
 		Weight = .0295;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
@@ -12740,7 +12832,9 @@ $HumanNames = @(
 
 		Weight = .0197;
 
-		Gender = "Male"	},
+		Gender = "Female"
+
+    },
 
 	[pscustomobject]@{
 
@@ -12750,7 +12844,7 @@ $HumanNames = @(
 
 		Weight = .0049;
 
-		Gender = "Male"	},
+		Gender = "Female"	},
 
 	[pscustomobject]@{
 
@@ -12930,7 +13024,7 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Female"	},
 
 	[pscustomobject]@{
 
@@ -13320,7 +13414,7 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Female"	},
 
 	[pscustomobject]@{
 
@@ -13420,7 +13514,7 @@ $HumanNames = @(
 
 		Weight = .003;
 
-		Gender = "Male"	},
+		Gender = "Female"	},
 
 	[pscustomobject]@{
 
@@ -13530,7 +13624,7 @@ $HumanNames = @(
 
 		Weight = .0059;
 
-		Gender = "Male"	},
+		Gender = "Female"	},
 
 	[pscustomobject]@{
 
@@ -13920,7 +14014,7 @@ $HumanNames = @(
 
 		Weight = .002;
 
-		Gender = "Male"	},
+		Gender = "Female"	},
 
 	[pscustomobject]@{
 
@@ -14600,7 +14694,9 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
@@ -14610,7 +14706,9 @@ $HumanNames = @(
 
 		Weight = .002;
 
-		Gender = "Male"	},
+		Gender = "Female"
+
+    },
 
 	[pscustomobject]@{
 
@@ -15100,7 +15198,7 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Female"	},
 
 	[pscustomobject]@{
 
@@ -15440,7 +15538,7 @@ $HumanNames = @(
 
 		Weight = .0276;
 
-		Gender = "Male"	},
+		Gender = "Female"	},
 
 	[pscustomobject]@{
 
@@ -15450,7 +15548,7 @@ $HumanNames = @(
 
 		Weight = .0039;
 
-		Gender = "Male"	},
+		Gender = "Female"	},
 
 	[pscustomobject]@{
 
@@ -15570,7 +15668,7 @@ $HumanNames = @(
 
 		Weight = .002;
 
-		Gender = "Male"	},
+		Gender = "Female"	},
 
 	[pscustomobject]@{
 
@@ -15610,7 +15708,7 @@ $HumanNames = @(
 
 		Weight = .0039;
 
-		Gender = "Male"	},
+		Gender = "Female"	},
 
 	[pscustomobject]@{
 
@@ -15650,7 +15748,9 @@ $HumanNames = @(
 
 		Weight = .1418;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
@@ -15660,7 +15760,9 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
@@ -16120,7 +16222,7 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Female"	},
 
 	[pscustomobject]@{
 
@@ -16450,7 +16552,7 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Female"	},
 
 	[pscustomobject]@{
 
@@ -16570,7 +16672,7 @@ $HumanNames = @(
 
 		Weight = .0039;
 
-		Gender = "Male"	},
+		Gender = "Female"	},
 
 	[pscustomobject]@{
 
@@ -16790,7 +16892,9 @@ $HumanNames = @(
 
 		Weight = .002;
 
-		Gender = "Male"	},
+		Gender = "Male"
+    
+    },
 
 	[pscustomobject]@{
 
@@ -16800,7 +16904,9 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
@@ -16810,7 +16916,9 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
@@ -16820,7 +16928,9 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
@@ -16830,7 +16940,9 @@ $HumanNames = @(
 
 		Weight = .0049;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
@@ -16840,7 +16952,9 @@ $HumanNames = @(
 
 		Weight = .0295;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
@@ -16850,17 +16964,9 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
-
-	[pscustomobject]@{
-
-		Name = "None";
-
-		Source = "Domesday 1086";
-
-		Weight = .245;
-
-		Gender = "Male"	},
+		Gender = "Male"
+   
+    },
 
 	[pscustomobject]@{
 
@@ -16870,7 +16976,9 @@ $HumanNames = @(
 
 		Weight = .002;
 
-		Gender = "Male"	},
+		Gender = "Male"
+    
+    },
 
 	[pscustomobject]@{
 
@@ -16880,7 +16988,9 @@ $HumanNames = @(
 
 		Weight = .0177;
 
-		Gender = "Male"	},
+		Gender = "Male"
+    
+    },
 
 	[pscustomobject]@{
 
@@ -16890,7 +17000,9 @@ $HumanNames = @(
 
 		Weight = .0522;
 
-		Gender = "Male"	},
+		Gender = "Male"
+    
+    },
 
 	[pscustomobject]@{
 
@@ -17440,7 +17552,7 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Female"	},
 
 	[pscustomobject]@{
 
@@ -18600,7 +18712,9 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Female"
+
+    },
 
 	[pscustomobject]@{
 
@@ -18840,7 +18954,9 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Male"
+
+    },
 
 	[pscustomobject]@{
 
@@ -18850,7 +18966,9 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Female"
+
+    },
 
 	[pscustomobject]@{
 
@@ -20510,7 +20628,7 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Female"	},
 
 	[pscustomobject]@{
 
@@ -20800,7 +20918,7 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"	},
+		Gender = "Female"	},
 
 	[pscustomobject]@{
 
@@ -20810,7 +20928,7 @@ $HumanNames = @(
 
 		Weight = .002;
 
-		Gender = "Male"	},
+		Gender = "Female"	},
 
 	[pscustomobject]@{
 
@@ -22170,7 +22288,7 @@ $HumanNames = @(
 
 		Weight = .0148;
 
-		Gender = "Male"	},
+		Gender = "Female"	},
 
 	[pscustomobject]@{
 
@@ -22190,7 +22308,7 @@ $HumanNames = @(
 
 		Weight = .002;
 
-		Gender = "Male"	},
+		Gender = "Female"	},
 
 	[pscustomobject]@{
 
@@ -22280,7 +22398,7 @@ $HumanNames = @(
 
 		Weight = .0059;
 
-		Gender = "Male"	},
+		Gender = "Female"	},
 
 	[pscustomobject]@{
 
@@ -22310,7 +22428,7 @@ $HumanNames = @(
 
 		Weight = .003;
 
-		Gender = "Male"	},
+		Gender = "Female"	},
 
 	[pscustomobject]@{
 
@@ -22360,7 +22478,7 @@ $HumanNames = @(
 
 		Weight = .002;
 
-		Gender = "Male"	},
+		Gender = "Female"	},
 
 	[pscustomobject]@{
 
@@ -22527,7 +22645,7 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
@@ -22571,7 +22689,7 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
@@ -22582,7 +22700,7 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
@@ -22681,7 +22799,7 @@ $HumanNames = @(
 
 		Weight = .002;
 
-		Gender = "Male"
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
@@ -22978,7 +23096,7 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
@@ -23011,7 +23129,7 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
@@ -23088,7 +23206,7 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
@@ -23110,7 +23228,7 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
@@ -23165,7 +23283,7 @@ $HumanNames = @(
 
 		Weight = .002;
 
-		Gender = "Male"
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
@@ -23242,7 +23360,7 @@ $HumanNames = @(
 
 		Weight = .0049;
 
-		Gender = "Male"
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
@@ -23374,7 +23492,7 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
@@ -23748,7 +23866,7 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
@@ -23837,6 +23955,7 @@ $HumanNames = @(
 		Weight = .0226;
 
 		Gender = "Male"
+
 	},
 
 	[pscustomobject]@{
@@ -23847,7 +23966,8 @@ $HumanNames = @(
 
 		Weight = .0433;
 
-		Gender = "Male"
+		Gender = "Female"
+
 	},
 
 	[pscustomobject]@{
@@ -23858,7 +23978,8 @@ $HumanNames = @(
 
 		Weight = .0049;
 
-		Gender = "Male"
+		Gender = "Female"
+
 	},
 
 	[pscustomobject]@{
@@ -23902,7 +24023,7 @@ $HumanNames = @(
 
 		Weight = .0059;
 
-		Gender = "Male"
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
@@ -24145,6 +24266,7 @@ $HumanNames = @(
 		Weight = .002;
 
 		Gender = "Male"
+
 	},
 
 	[pscustomobject]@{
@@ -24155,7 +24277,8 @@ $HumanNames = @(
 
 		Weight = .0079;
 
-		Gender = "Male"
+		Gender = "Female"
+
 	},
 
 	[pscustomobject]@{
@@ -24166,7 +24289,7 @@ $HumanNames = @(
 
 		Weight = .002;
 
-		Gender = "Male"
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
@@ -24199,7 +24322,7 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
@@ -24441,7 +24564,7 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
@@ -24717,6 +24840,7 @@ $HumanNames = @(
 		Weight = .0256;
 
 		Gender = "Male"
+
 	},
 
 	[pscustomobject]@{
@@ -24727,7 +24851,8 @@ $HumanNames = @(
 
 		Weight = .0108;
 
-		Gender = "Male"
+		Gender = "Female"
+
 	},
 
 	[pscustomobject]@{
@@ -24738,7 +24863,7 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
@@ -26146,7 +26271,7 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
@@ -26157,7 +26282,7 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
@@ -26564,7 +26689,8 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"
+		Gender = "Female"
+
 	},
 
 	[pscustomobject]@{
@@ -26575,7 +26701,8 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"
+		Gender = "Female"
+
 	},
 
 	[pscustomobject]@{
@@ -26587,6 +26714,7 @@ $HumanNames = @(
 		Weight = .001;
 
 		Gender = "Male"
+
 	},
 
 	[pscustomobject]@{
@@ -26598,6 +26726,7 @@ $HumanNames = @(
 		Weight = .001;
 
 		Gender = "Male"
+
 	},
 
 	[pscustomobject]@{
@@ -26609,6 +26738,7 @@ $HumanNames = @(
 		Weight = .001;
 
 		Gender = "Male"
+
 	},
 
 	[pscustomobject]@{
@@ -26619,7 +26749,8 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"
+		Gender = "Female"
+
 	},
 
 	[pscustomobject]@{
@@ -26971,7 +27102,7 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
@@ -27092,7 +27223,7 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
@@ -27213,7 +27344,8 @@ $HumanNames = @(
 
 		Weight = .0256;
 
-		Gender = "Male"
+		Gender = "Female"
+
 	},
 
 	[pscustomobject]@{
@@ -27224,7 +27356,7 @@ $HumanNames = @(
 
 		Weight = .0217;
 
-		Gender = "Male"
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
@@ -27379,6 +27511,7 @@ $HumanNames = @(
 		Weight = .001;
 
 		Gender = "Male"
+
 	},
 
 	[pscustomobject]@{
@@ -27389,7 +27522,8 @@ $HumanNames = @(
 
 		Weight = .003;
 
-		Gender = "Male"
+		Gender = "Female"
+
 	},
 
 	[pscustomobject]@{
@@ -27400,7 +27534,7 @@ $HumanNames = @(
 
 		Weight = .0108;
 
-		Gender = "Male"
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
@@ -27411,7 +27545,7 @@ $HumanNames = @(
 
 		Weight = .002;
 
-		Gender = "Male"
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
@@ -27675,7 +27809,7 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
@@ -27741,7 +27875,7 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
@@ -27840,7 +27974,7 @@ $HumanNames = @(
 
 		Weight = .0039;
 
-		Gender = "Male"
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
@@ -28214,7 +28348,8 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"
+		Gender = "Female"
+
 	},
 
 	[pscustomobject]@{
@@ -28247,7 +28382,7 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
@@ -29336,7 +29471,8 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"
+		Gender = "Female"
+
 	},
 
 	[pscustomobject]@{
@@ -29510,9 +29646,20 @@ $HumanNames = @(
 
 		Source = "Domesday 1086";
 
-		Weight = .0305;
+		Weight = .03;
 
 		Gender = "Male"
+	},
+
+	[pscustomobject]@{
+
+		Name = "Goda";
+
+		Source = "Domesday 1086";
+
+		Weight = .01;
+
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
@@ -29556,7 +29703,7 @@ $HumanNames = @(
 
 		Weight = .0039;
 
-		Gender = "Male"
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
@@ -29589,7 +29736,7 @@ $HumanNames = @(
 
 		Weight = .002;
 
-		Gender = "Male"
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
@@ -29601,6 +29748,7 @@ $HumanNames = @(
 		Weight = .0295;
 
 		Gender = "Male"
+
 	},
 
 	[pscustomobject]@{
@@ -29611,7 +29759,8 @@ $HumanNames = @(
 
 		Weight = .0197;
 
-		Gender = "Male"
+		Gender = "Female"
+
 	},
 
 	[pscustomobject]@{
@@ -29622,7 +29771,8 @@ $HumanNames = @(
 
 		Weight = .0049;
 
-		Gender = "Male"
+		Gender = "Female"
+
 	},
 
 	[pscustomobject]@{
@@ -29634,6 +29784,7 @@ $HumanNames = @(
 		Weight = .002;
 
 		Gender = "Male"
+
 	},
 
 	[pscustomobject]@{
@@ -29645,6 +29796,7 @@ $HumanNames = @(
 		Weight = .002;
 
 		Gender = "Male"
+
 	},
 
 	[pscustomobject]@{
@@ -29656,6 +29808,7 @@ $HumanNames = @(
 		Weight = .001;
 
 		Gender = "Male"
+
 	},
 
 	[pscustomobject]@{
@@ -29820,7 +29973,8 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"
+		Gender = "Female"
+
 	},
 
 	[pscustomobject]@{
@@ -29843,6 +29997,7 @@ $HumanNames = @(
 		Weight = .002;
 
 		Gender = "Male"
+
 	},
 
 	[pscustomobject]@{
@@ -29854,6 +30009,8 @@ $HumanNames = @(
 		Weight = .001;
 
 		Gender = "Male"
+
+
 	},
 
 	[pscustomobject]@{
@@ -29865,6 +30022,7 @@ $HumanNames = @(
 		Weight = .001;
 
 		Gender = "Male"
+
 	},
 
 	[pscustomobject]@{
@@ -29876,6 +30034,7 @@ $HumanNames = @(
 		Weight = .001;
 
 		Gender = "Male"
+
 	},
 
 	[pscustomobject]@{
@@ -29887,6 +30046,7 @@ $HumanNames = @(
 		Weight = .001;
 
 		Gender = "Male"
+
 	},
 
 	[pscustomobject]@{
@@ -29898,6 +30058,7 @@ $HumanNames = @(
 		Weight = .0049;
 
 		Gender = "Male"
+
 	},
 
 	[pscustomobject]@{
@@ -29909,6 +30070,7 @@ $HumanNames = @(
 		Weight = .0039;
 
 		Gender = "Male"
+
 	},
 
 	[pscustomobject]@{
@@ -29920,6 +30082,7 @@ $HumanNames = @(
 		Weight = .001;
 
 		Gender = "Male"
+
 	},
 
 	[pscustomobject]@{
@@ -30249,7 +30412,7 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
@@ -30357,9 +30520,20 @@ $HumanNames = @(
 
 		Source = "Domesday 1086";
 
-		Weight = .003;
+		Weight = .001;
 
 		Gender = "Male"
+	},
+
+	[pscustomobject]@{
+
+		Name = "Gunware";
+
+		Source = "Domesday 1086";
+
+		Weight = .001;
+
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
@@ -30480,7 +30654,7 @@ $HumanNames = @(
 
 		Weight = .0059;
 
-		Gender = "Male"
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
@@ -30909,7 +31083,7 @@ $HumanNames = @(
 
 		Weight = .002;
 
-		Gender = "Male"
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
@@ -31668,7 +31842,7 @@ $HumanNames = @(
 
 		Weight = .002;
 
-		Gender = "Male"
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
@@ -31800,7 +31974,7 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
@@ -32197,6 +32371,7 @@ $HumanNames = @(
 		Weight = .0059;
 
 		Gender = "Male"
+
 	},
 
 	[pscustomobject]@{
@@ -32207,7 +32382,8 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"
+		Gender = "Female"
+
 	},
 
 	[pscustomobject]@{
@@ -32548,7 +32724,7 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
@@ -32581,7 +32757,7 @@ $HumanNames = @(
 
 		Weight = .0276;
 
-		Gender = "Male"
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
@@ -32592,7 +32768,7 @@ $HumanNames = @(
 
 		Weight = .0039;
 
-		Gender = "Male"
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
@@ -32713,7 +32889,7 @@ $HumanNames = @(
 
 		Weight = .0049;
 
-		Gender = "Male"
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
@@ -32724,7 +32900,7 @@ $HumanNames = @(
 
 		Weight = .002;
 
-		Gender = "Male"
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
@@ -33319,6 +33495,7 @@ $HumanNames = @(
 		Weight = .002;
 
 		Gender = "Male"
+
 	},
 
 	[pscustomobject]@{
@@ -33329,7 +33506,8 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"
+		Gender = "Female"
+    
 	},
 
 	[pscustomobject]@{
@@ -33692,7 +33870,7 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
@@ -33758,7 +33936,7 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
@@ -33824,7 +34002,7 @@ $HumanNames = @(
 
 		Weight = .0039;
 
-		Gender = "Male"
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
@@ -34781,7 +34959,8 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"
+		Gender = "Female"
+
 	},
 
 	[pscustomobject]@{
@@ -36057,7 +36236,7 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
@@ -36332,7 +36511,7 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
@@ -37543,6 +37722,7 @@ $HumanNames = @(
 		Weight = .003;
 
 		Gender = "Male"
+
 	},
 
 	[pscustomobject]@{
@@ -37554,6 +37734,7 @@ $HumanNames = @(
 		Weight = .001;
 
 		Gender = "Male"
+
 	},
 
 	[pscustomobject]@{
@@ -38158,7 +38339,7 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
@@ -38467,6 +38648,7 @@ $HumanNames = @(
 		Weight = .0049;
 
 		Gender = "Male"
+
 	},
 
 	[pscustomobject]@{
@@ -38477,7 +38659,8 @@ $HumanNames = @(
 
 		Weight = .001;
 
-		Gender = "Male"
+		Gender = "Female"
+
 	},
 
 	[pscustomobject]@{
@@ -38488,7 +38671,8 @@ $HumanNames = @(
 
 		Weight = .002;
 
-		Gender = "Male"
+		Gender = "Female"
+
 	},
 
 	[pscustomobject]@{
@@ -39974,6 +40158,7 @@ $HumanNames = @(
 		Weight = .061;
 
 		Gender = "Male"
+
 	},
 
 	[pscustomobject]@{
@@ -39984,7 +40169,8 @@ $HumanNames = @(
 
 		Weight = .0148;
 
-		Gender = "Male"
+		Gender = "Female"
+
 	},
 
 	[pscustomobject]@{
@@ -40006,7 +40192,7 @@ $HumanNames = @(
 
 		Weight = .002;
 
-		Gender = "Male"
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
@@ -40193,7 +40379,7 @@ $HumanNames = @(
 
 		Weight = .002;
 
-		Gender = "Male"
+		Gender = "Female"
 	},
 
 	[pscustomobject]@{
