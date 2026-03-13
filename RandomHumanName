@@ -40525,7 +40525,7 @@ function Get-HumanName {
 
     foreach($Row in $FilteredNames){
     
-        $PossibleNames += [pscustomobject]@{Name=$Row.Name;Source=$Row.Source;Weight=$(if($Row.Weight * 1000 > 1){[math]::Round($Row.Weight * 1000)}else{1});Gender=$Row.Gender}
+        $PossibleNames += [pscustomobject]@{Name=$Row.Name;Source=$Row.Source;Weight=$(if(($Row.Weight * 1000) -gt 1){[math]::Round($Row.Weight * 1000)}else{1});Gender=$Row.Gender}
 
     }
 
